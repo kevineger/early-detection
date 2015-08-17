@@ -14,6 +14,8 @@ class CreatePublicationsTable extends Migration
     {
         Schema::create('publications', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            // TODO: Figure out fields
             $table->timestamps();
         });
     }
