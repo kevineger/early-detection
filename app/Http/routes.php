@@ -12,18 +12,41 @@
 */
 
 /*---Static Pages------------------------------------------------*/
+/*---------------------------------------------------------------*/
 // Home Page
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', 'PagesController@home');
+// Contact Us
+Route::get('contact', 'PagesController@contact');
+// Research Opportunities
+Route::get('research', 'PagesController@research');
 /*---------------------------------------------------------------*/
 
 /*---Administration----------------------------------------------*/
+/*---------------------------------------------------------------*/
 // Dashboard
-Route::get('admin', 'UserController@index');
+Route::get('admin', 'UsersController@index');
+/*---------------------------------------------------------------*/
+
+/*---People------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+// People Route Resource
+Route::get('people', 'PeoplesController@index');
+/*---------------------------------------------------------------*/
+
+/*---Projects----------------------------------------------------*/
+/*---------------------------------------------------------------*/
+// Projects Route Resource
+Route::resource('people', 'PeoplesController');
+/*---------------------------------------------------------------*/
+
+/*---Publications------------------------------------------------*/
+/*---------------------------------------------------------------*/
+// Publications Route Resource
+Route::resource('people', 'PeoplesController');
 /*---------------------------------------------------------------*/
 
 /*---Authentication----------------------------------------------*/
+/*---------------------------------------------------------------*/
 // Login routes
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
