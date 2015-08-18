@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PeopleRequest;
 use App\People;
 use Illuminate\Http\Request;
 
@@ -21,27 +22,6 @@ class PeoplesController extends Controller
     }
 
     /**
-     * Show the form for creating a new people.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created people in storage.
-     *
-     * @param  Request  $request
-     * @return Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified people.
      *
      * @param People $people
@@ -52,75 +32,92 @@ class PeoplesController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified people.
-     *
-     * @param  People  $people
-     * @return Response
-     */
-    public function edit(People $people)
-    {
-        //
-    }
-
-    /**
-     * Update the specified people in storage.
-     *
-     * @param  Request  $request
-     * @param  people  $people
-     * @return Response
-     */
-    public function update(Request $request, People $people)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified people from storage.
-     *
-     * @param  People  $people
-     * @return Response
-     */
-    public function destroy(People $people)
-    {
-        //
-    }
-
     /**************************************************************/
     /*Admin Management Methods*************************************/
     /**************************************************************/
 
-    /*---People->-*/
-
+    /**
+     * Display a listing of all manageable people.
+     *
+     * @return \Illuminate\View\View
+     */
     public function managePeopleIndex()
     {
-        return view('admin.people.index');
+        $peoples = People::all();
+
+        return view('admin.people.index', ['peoples' => $peoples]);
     }
 
-    public function managePeopleCreate(People $people)
+    /**
+     * Display the view to create a new people.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function managePeopleCreate()
     {
-
+        return view('admin.people.create');
     }
 
-    public function managePeopleStore(Request $request)
+    /**
+     * Store a newly created people in storage.
+     *
+     * @param PeopleRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function managePeopleStore(PeopleRequest $request)
     {
+        $people = People::create($request->all());
 
+        return redirect()->action('PeoplesController@managePeopleShow', [$people]);
     }
 
+    /**
+     * Display the specified people.
+     *
+     * @param People $people
+     * @return \Illuminate\View\View
+     */
     public function managePeopleShow(People $people)
     {
-
+        return view('admin.people.show', ['people' => $people]);
     }
 
+    /**
+     * Display the view to edit an existing people.
+     * @param People $people
+     * @return \Illuminate\View\View
+     */
     public function managePeopleEdit(People $people)
     {
-
+        return view('admin.people.edit', ['people' => $people]);
     }
 
-    public function managePeopleUpdate(Request $request, People $people)
+    /**
+     * Store changes to an existing people in storage.
+     *
+     * @param PeopleRequest $request
+     * @param People $people
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function managePeopleUpdate(PeopleRequest $request, People $people)
     {
+        $people->update($request->all());
 
+        return redirect()->action('PeoplesController@managePeopleShow', [$people]);
     }
 
-    /*-<-People---*/
+    /**
+     * Delete an existing people from storage.
+     *
+     * @param People $people
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @throws \Exception
+     */
+    function managePeopleDestroy(People $people)
+    {
+        $people->delete();
+
+        return redirect('admin/peoples');
+    }
+
 }

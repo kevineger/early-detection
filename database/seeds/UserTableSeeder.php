@@ -1,6 +1,8 @@
 <?php
 
+use App\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class UserTableSeeder extends Seeder
 {
@@ -11,6 +13,8 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('users')->delete();
+
+        User::create(['name' => 'Kevin Eger', 'email' => 'admin@example.com', 'password' => Hash::make('password')]);
     }
 }

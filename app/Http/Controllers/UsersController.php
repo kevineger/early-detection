@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\People;
-use App\Project;
-use App\Publication;
 use App\User;
 use Illuminate\Http\Request;
 

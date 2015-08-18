@@ -25,16 +25,27 @@ Route::get('research', 'PagesController@research');
 /*---------------------------------------------------------------*/
 // Dashboard
 Route::get('admin', ['middleware' => 'auth', 'uses' => 'UsersController@index']);
-Route::get('admin/people', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleIndex']);
+// People
+Route::get('admin/peoples', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleIndex', 'as' => 'admin.peoples']);
+Route::post('admin/peoples', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleStore']);
+Route::get('admin/peoples/create', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleCreate']);
+Route::get('admin/peoples/{peoples}/edit', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleEdit']);
+Route::patch('admin/peoples/{peoples}', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleUpdate']);
+Route::delete('admin/peoples/{peoples}', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleDestroy', 'as' => 'admin.peoples.destroy']);
+Route::get('admin/peoples/{peoples}', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleShow']);
+// Projects
 Route::get('admin/projects', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectIndex']);
+// Publications
 Route::get('admin/publications', ['middleware' => 'auth', 'uses' => 'PublicationsController@managePublicationIndex']);
+// Pages
 Route::get('admin/pages', ['middleware' => 'auth', 'uses' => 'PagesController@managePublicationIndex']);
 /*---------------------------------------------------------------*/
 
 /*---People------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 // People Route Resource
-Route::resource('peoples', 'PeoplesController@index');
+Route::get('peoples', 'PeoplesController@index');
+Route::get('peoples/{peoples}', 'PeoplesController@show');
 /*---------------------------------------------------------------*/
 
 /*---Projects----------------------------------------------------*/
