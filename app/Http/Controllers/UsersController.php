@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\People;
+use App\Project;
+use App\Publication;
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -44,10 +48,10 @@ class UsersController extends Controller
     /**
      * Display the specified admin.
      *
-     * @param  int  $id
+     * @param  User  $user
      * @return Response
      */
-    public function show($id)
+    public function show(User $user)
     {
         //
     }
@@ -55,10 +59,10 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified admin.
      *
-     * @param  int  $id
+     * @param  User   $user
      * @return Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
         //
     }
@@ -67,10 +71,10 @@ class UsersController extends Controller
      * Update the specified admin in storage.
      *
      * @param  Request  $request
-     * @param  int  $id
+     * @param  User  $user
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -78,11 +82,12 @@ class UsersController extends Controller
     /**
      * Remove the specified admin from storage.
      *
-     * @param  int  $id
+     * @param  User  $user
      * @return Response
      */
-    public function destroy($id)
+    public function destroy(User $user)
     {
         //
     }
+
 }

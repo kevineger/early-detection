@@ -24,25 +24,29 @@ Route::get('research', 'PagesController@research');
 /*---Administration----------------------------------------------*/
 /*---------------------------------------------------------------*/
 // Dashboard
-Route::get('admin', 'UsersController@index');
+Route::get('admin', ['middleware' => 'auth', 'uses' => 'UsersController@index']);
+Route::get('admin/people', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleIndex']);
+Route::get('admin/projects', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectIndex']);
+Route::get('admin/publications', ['middleware' => 'auth', 'uses' => 'PublicationsController@managePublicationIndex']);
+Route::get('admin/pages', ['middleware' => 'auth', 'uses' => 'PagesController@managePublicationIndex']);
 /*---------------------------------------------------------------*/
 
 /*---People------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 // People Route Resource
-Route::get('people', 'PeoplesController@index');
+Route::resource('peoples', 'PeoplesController@index');
 /*---------------------------------------------------------------*/
 
 /*---Projects----------------------------------------------------*/
 /*---------------------------------------------------------------*/
 // Projects Route Resource
-Route::resource('people', 'PeoplesController');
+Route::resource('projects', 'ProjectsController');
 /*---------------------------------------------------------------*/
 
 /*---Publications------------------------------------------------*/
 /*---------------------------------------------------------------*/
 // Publications Route Resource
-Route::resource('people', 'PeoplesController');
+Route::resource('publications', 'PublicationsController');
 /*---------------------------------------------------------------*/
 
 /*---Authentication----------------------------------------------*/

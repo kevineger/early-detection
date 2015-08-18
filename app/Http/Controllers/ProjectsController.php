@@ -16,11 +16,11 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        //
+        return view('project.index');
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new project.
      *
      * @return Response
      */
@@ -30,7 +30,7 @@ class ProjectsController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created project in storage.
      *
      * @param  Request  $request
      * @return Response
@@ -41,7 +41,7 @@ class ProjectsController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified project.
      *
      * @param  int  $id
      * @return Response
@@ -52,7 +52,7 @@ class ProjectsController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified project.
      *
      * @param  int  $id
      * @return Response
@@ -63,7 +63,7 @@ class ProjectsController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified project in storage.
      *
      * @param  Request  $request
      * @param  int  $id
@@ -75,7 +75,7 @@ class ProjectsController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified project from storage.
      *
      * @param  int  $id
      * @return Response
@@ -84,4 +84,42 @@ class ProjectsController extends Controller
     {
         //
     }
+
+    /**************************************************************/
+    /*Admin Management Methods*************************************/
+    /**************************************************************/
+
+    /*---Project->-*/
+
+    public function manageProjectIndex()
+    {
+        return view('admin.project.index');
+    }
+
+    public function manageProjectCreate(Project $project)
+    {
+
+    }
+
+    public function manageProjectStore(Request $request)
+    {
+
+    }
+
+    public function manageProjectShow(Project $project)
+    {
+
+    }
+
+    public function manageProjectEdit(Project $project)
+    {
+
+    }
+
+    public function manageProjectUpdate(Request $request, Project $project)
+    {
+
+    }
+
+    /*-<-Project---*/
 }

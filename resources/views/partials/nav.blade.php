@@ -12,7 +12,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('people') }}">People</a></li>
+                <li><a href="{{ url('peoples') }}">People</a></li>
                 <li><a href="{{ url('projects') }}">Projects</a></li>
                 <li><a href="{{ url('publications') }}">Publications</a></li>
                 <li><a href="{{ url('research') }}">Research Opportunities</a></li>

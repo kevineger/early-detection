@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\People;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -16,11 +17,11 @@ class PeoplesController extends Controller
      */
     public function index()
     {
-        //
+        return view('people.index');
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new people.
      *
      * @return Response
      */
@@ -30,7 +31,7 @@ class PeoplesController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created people in storage.
      *
      * @param  Request  $request
      * @return Response
@@ -41,47 +42,85 @@ class PeoplesController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified people.
      *
-     * @param  int  $id
+     * @param People $people
      * @return Response
      */
-    public function show($id)
+    public function show(People $people)
     {
         //
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified people.
      *
-     * @param  int  $id
+     * @param  People  $people
      * @return Response
      */
-    public function edit($id)
+    public function edit(People $people)
     {
         //
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified people in storage.
      *
      * @param  Request  $request
-     * @param  int  $id
+     * @param  people  $people
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, People $people)
     {
         //
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified people from storage.
      *
-     * @param  int  $id
+     * @param  People  $people
      * @return Response
      */
-    public function destroy($id)
+    public function destroy(People $people)
     {
         //
     }
+
+    /**************************************************************/
+    /*Admin Management Methods*************************************/
+    /**************************************************************/
+
+    /*---People->-*/
+
+    public function managePeopleIndex()
+    {
+        return view('admin.people.index');
+    }
+
+    public function managePeopleCreate(People $people)
+    {
+
+    }
+
+    public function managePeopleStore(Request $request)
+    {
+
+    }
+
+    public function managePeopleShow(People $people)
+    {
+
+    }
+
+    public function managePeopleEdit(People $people)
+    {
+
+    }
+
+    public function managePeopleUpdate(Request $request, People $people)
+    {
+
+    }
+
+    /*-<-People---*/
 }

@@ -9,18 +9,19 @@ use App\Http\Controllers\Controller;
 
 class PublicationsController extends Controller
 {
+
     /**
-     * Display a listing of the resource.
+     * Display a listing of the publications.
      *
-     * @return Response
+     * @return \Illuminate\View\View
      */
     public function index()
     {
-        //
+        return view('publication.index');
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new publication.
      *
      * @return Response
      */
@@ -30,7 +31,7 @@ class PublicationsController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created publication in storage.
      *
      * @param  Request  $request
      * @return Response
@@ -41,7 +42,7 @@ class PublicationsController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified publication.
      *
      * @param  int  $id
      * @return Response
@@ -52,7 +53,7 @@ class PublicationsController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified publication.
      *
      * @param  int  $id
      * @return Response
@@ -63,7 +64,7 @@ class PublicationsController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified publication in storage.
      *
      * @param  Request  $request
      * @param  int  $id
@@ -75,7 +76,7 @@ class PublicationsController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified publication from storage.
      *
      * @param  int  $id
      * @return Response
@@ -84,4 +85,42 @@ class PublicationsController extends Controller
     {
         //
     }
+
+    /**************************************************************/
+    /*Admin Management Methods*************************************/
+    /**************************************************************/
+
+    /*---Publication->-*/
+
+    public function managePublicationIndex()
+    {
+        return view('admin.publication.index');
+    }
+
+    public function managePublicationCreate(Publication $publication)
+    {
+
+    }
+
+    public function managePublicationStore(Request $request)
+    {
+
+    }
+
+    public function managePublicationShow(Publication $publication)
+    {
+
+    }
+
+    public function managePublicationEdit(Publication $publication)
+    {
+
+    }
+
+    public function managePublicationUpdate(Request $request, Publication $publication)
+    {
+
+    }
+
+    /*-<-Publication---*/
 }
