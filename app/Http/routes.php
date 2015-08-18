@@ -25,6 +25,7 @@ Route::get('research', 'PagesController@research');
 /*---------------------------------------------------------------*/
 // Dashboard
 Route::get('admin', ['middleware' => 'auth', 'uses' => 'UsersController@index']);
+
 // People
 Route::get('admin/peoples', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleIndex', 'as' => 'admin.peoples']);
 Route::post('admin/peoples', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleStore']);
@@ -33,10 +34,19 @@ Route::get('admin/peoples/{peoples}/edit', ['middleware' => 'auth', 'uses' => 'P
 Route::patch('admin/peoples/{peoples}', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleUpdate']);
 Route::delete('admin/peoples/{peoples}', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleDestroy', 'as' => 'admin.peoples.destroy']);
 Route::get('admin/peoples/{peoples}', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleShow']);
+
 // Projects
-Route::get('admin/projects', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectIndex']);
+Route::get('admin/projects', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectIndex', 'as' => 'admin.projects']);
+Route::post('admin/projects', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectStore']);
+Route::get('admin/projects/create', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectCreate']);
+Route::get('admin/projects/{projects}/edit', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectEdit']);
+Route::patch('admin/projects/{projects}', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectUpdate']);
+Route::delete('admin/projects/{projects}', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectDestroy', 'as' => 'admin.projects.destroy']);
+Route::get('admin/projects/{projects}', ['middleware' => 'auth', 'uses' => 'ProjectsController@manageProjectShow']);
+
 // Publications
 Route::get('admin/publications', ['middleware' => 'auth', 'uses' => 'PublicationsController@managePublicationIndex']);
+
 // Pages
 Route::get('admin/pages', ['middleware' => 'auth', 'uses' => 'PagesController@managePublicationIndex']);
 /*---------------------------------------------------------------*/

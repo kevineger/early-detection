@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProjectRequest;
+use App\Project;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -89,37 +91,47 @@ class ProjectsController extends Controller
     /*Admin Management Methods*************************************/
     /**************************************************************/
 
-    /*---Project->-*/
-
     public function manageProjectIndex()
     {
-        return view('admin.project.index');
+        $projects = Project::all();
+
+        return view('admin.project.index', ['projects' => $projects]);
     }
 
-    public function manageProjectCreate(Project $project)
+    public function manageProjectCreate()
     {
-
+        return view('admin.project.create');
     }
 
-    public function manageProjectStore(Request $request)
+    public function manageProjectStore(ProjectRequest $request)
     {
+        $project = Project::create($request->all());
 
+        return redirect()->action('ProjectsController@manageProjectShow', [$project]);
     }
 
     public function manageProjectShow(Project $project)
     {
-
+        return view('admin.project.show', ['project' => $project]);
     }
 
     public function manageProjectEdit(Project $project)
     {
-
+        return view('admin.project.edit', ['project' => $project]);
     }
 
-    public function manageProjectUpdate(Request $request, Project $project)
+    public function manageProjectUpdate(ProjectRequest $request, Project $project)
     {
+        $project->update($request->all());
 
+        return redirect()->action('ProjectsController@manageProjectShow', [$project]);
     }
 
-    /*-<-Project---*/
+    function manageProjectDestroy(Project $project)
+    {
+        $project->delete();
+
+        return redirect('admin/projects');
+    }
+
 }
