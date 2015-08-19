@@ -2,8 +2,8 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 
-    <script src="{{ asset('js/webtoolkit.aim.js') }}" type="text/javascript"><!--mce:0--></script>
-    <script type="text/javascript"><!--mce:1--></script>
+    {{--<script src="{{ asset('js/webtoolkit.aim.js') }}" type="text/javascript"><!--mce:0--></script>
+    <script type="text/javascript"><!--mce:1--></script>--}}
 @endsection
 
 {{--Name--}}
@@ -31,11 +31,19 @@
 <div class="form-group">
     {!! Form::textarea('description', $people->description, ['placeholder' => 'Enter Description', 'class' => 'form-control']) !!}
 </div>
-
-{{--Image Upload--}}
-<h3>Image Upload</h3>
-<label>Select image to upload:</label>
-{!! Form::file('image') !!}
+<div id="upload">
+    @if( $people->image == null || $people->image === "placeholder.jpg" )
+        {{--Image Upload--}}
+        <h3>Image Upload</h3>
+        <label>Select image to upload:</label>
+        {!! Form::file('image') !!}
+    @else
+        <div class="form-group">
+            <img src="{{ asset('images/' . $people->image) }}" alt="{{ $people->name }} . image">
+            <a id="change_image" class="btn btn-default">Change image</a>
+        </div>
+    @endif
+</div>
 
 <br>
 
@@ -49,5 +57,17 @@
 @section('footer')
     <script type="text/javascript">
         $('#type').select2();
+    </script>
+    <script>
+        $(document).ready(function () {
+            var add_button = $("#change_image");
+            var wrapper = $("#upload");
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                $(wrapper).append('<h3>Image Upload</h3><label>Select image to upload:</label>{!! Form::file('image') !!}');
+                $(add_button).parent().remove();
+            })
+        })
     </script>
 @endsection

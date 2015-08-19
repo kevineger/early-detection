@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Edit a person</h1>
-    {!! Form::model($people, ['method' => 'PATCH', 'action' => ['PeoplesController@managePeopleUpdate', $people]]) !!}
+    {!! Form::model($people, ['method' => 'PATCH', 'action' => ['PeoplesController@managePeopleUpdate', $people], 'files' => true]) !!}
         @include('admin.people.form', ['submitButtonText' => 'Edit Person'])
     {!! Form::close() !!}
 

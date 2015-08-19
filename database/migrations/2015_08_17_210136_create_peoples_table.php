@@ -19,6 +19,7 @@ class CreatePeoplesTable extends Migration
             $table->string('position');
             $table->string('education');
             $table->string('description');
+            $table->string('image')->default("placeholder.jpg");
             $table->timestamps();
         });
     }

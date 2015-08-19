@@ -9,4 +9,5 @@
         <li>Description: {{ $people->description }}</li>
         <li>Added to System: {{ $people->created_at->diffForHumans() }}</li>
     </ul>
+    <img src="{{ asset('images/' . $people->image) }}" alt="image">
 @endsection

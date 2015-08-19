@@ -72,15 +72,10 @@ class PeoplesController extends Controller
      */
     public function managePeopleStore(PeopleRequest $request)
     {
-        $file = $request->file('image');
-        $filename = time() . '.' . $file->getClientOriginalExtension();
-        $path = 'images/' . $filename;
-        $img = Image::make($file);
-        $return = $img->save($path);
-
-        dd($return->filename);
-
         $people = People::create($request->all());
+
+        // Save image to person
+        $this->addImage($people, $request);
 
         return redirect()->action('PeoplesController@managePeopleShow', [$people]);
     }
@@ -127,6 +122,11 @@ class PeoplesController extends Controller
     {
         $people->update($request->all());
 
+        // If there was an image change, update image
+        if ( $request->hasFile('image')) {
+            $this->addImage($people, $request);
+        }
+
         return redirect()->action('PeoplesController@managePeopleShow', [$people]);
     }
 
@@ -137,11 +137,29 @@ class PeoplesController extends Controller
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      * @throws \Exception
      */
-    function managePeopleDestroy(People $people)
+    public function managePeopleDestroy(People $people)
     {
         $people->delete();
 
         return redirect('admin/peoples');
+    }
+
+    /**
+     * Helper method for adding/saving an image to a person.
+     *
+     * @param $people
+     * @param $request
+     */
+    public function addImage($people, $request)
+    {
+        $file = $request->file('image');
+        $filename = time() . '.' . $file->getClientOriginalExtension();
+        $path = 'images/' . $filename;
+        $img = Image::make($file);
+        $img->save($path);
+        // Save image to person
+        $people->image = $filename;
+        $people->save();
     }
 
 }
