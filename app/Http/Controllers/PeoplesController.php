@@ -8,28 +8,32 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Collection;
+
+use Image;
 
 class PeoplesController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return Response
      */
     public function index()
     {
-        return view('people.index');
+        $peoples = People::all();
+
+        return view('people.index', ['peoples' => $peoples]);
     }
 
     /**
      * Display the specified people.
      *
      * @param People $people
-     * @return Response
+     * @return \Illuminate\View\View
      */
     public function show(People $people)
     {
-        //
+        return view('people.show', ['people' => $people]);
     }
 
     /**************************************************************/
@@ -55,7 +59,9 @@ class PeoplesController extends Controller
      */
     public function managePeopleCreate()
     {
-        return view('admin.people.create');
+        $type_list = ['Current Student', 'Past Student', 'Current Staff', 'Past Staff', 'Partner'];
+
+        return view('admin.people.create', ['type_list' => $type_list]);
     }
 
     /**
@@ -66,6 +72,14 @@ class PeoplesController extends Controller
      */
     public function managePeopleStore(PeopleRequest $request)
     {
+        $file = $request->file('image');
+        $filename = time() . '.' . $file->getClientOriginalExtension();
+        $path = 'images/' . $filename;
+        $img = Image::make($file);
+        $return = $img->save($path);
+
+        dd($return->filename);
+
         $people = People::create($request->all());
 
         return redirect()->action('PeoplesController@managePeopleShow', [$people]);
@@ -89,7 +103,17 @@ class PeoplesController extends Controller
      */
     public function managePeopleEdit(People $people)
     {
-        return view('admin.people.edit', ['people' => $people]);
+        $type_list = Collection::make([
+            'current_student' => "Current Student",
+            'past_student' => "Past Student",
+            'current_staff' => "Current Staff",
+            'past_staff' => "Past Staff",
+            'partner' => "Partner"]);
+
+        return view('admin.people.edit', [
+            'people' => $people,
+            'type_list' => $type_list,
+        ]);
     }
 
     /**

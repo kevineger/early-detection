@@ -1,9 +1,10 @@
 @extends('admin')
 
 @section('content')
+
     <h1>Create a Project</h1>
-    {!! Form::model($project = new App\Project, ['url' => 'admin/projects']) !!}
-        @include('admin.project.form', ['submitButtonText' => 'Add Project'])
+    {!! Form::model($project = new App\Project, ['url' => 'admin/projects', 'files'=> true]) !!}
+        @include('admin.project.form', ['submitButtonText' => 'Add Person'])
     {!! Form::close() !!}
 
     {{--Print out any errors--}}

@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Create a person</h1>
-    {!! Form::model($people = new App\People, ['url' => 'admin/peoples']) !!}
+    {!! Form::model($people = new App\People, ['url' => 'admin/peoples', 'files'=> true]) !!}
         @include('admin.people.form', ['submitButtonText' => 'Add Person'])
     {!! Form::close() !!}
 
@@ -14,4 +14,5 @@
             @endforeach
         </ul>
     @endif
+@endsection
 @endsection

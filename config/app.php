@@ -141,6 +141,8 @@ return [
          * Added Service PRoviders...
          */
         'Collective\Html\HtmlServiceProvider',
+        'Intervention\Image\ImageServiceProvider',
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -202,6 +204,7 @@ return [
          */
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
+        'Image' => 'Intervention\Image\Facades\Image',
 
     ],
 

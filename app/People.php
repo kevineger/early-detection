@@ -25,7 +25,7 @@ class People extends Model
      *
      * @return string
      */
-    public function getType()
+    public function getTextType()
     {
         switch($this->type) {
             case ('current_student'):
@@ -47,4 +47,5 @@ class People extends Model
                 return 'Not applicable';
         }
     }
+
 }

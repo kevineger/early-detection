@@ -4,7 +4,7 @@
     <h1>People Show</h1>
     <ul>
         <li>Name: {{ $people->name }}</li>
-        <li>Type: {{ $people->getType() }}</li>
+        <li>Type: {{ $people->getTextType() }}</li>
         <li>Position: {{ $people->position }}</li>
         <li>Education: {{ $people->education }}</li>
         <li>Description: {{ $people->description }}</li>
@@ -12,12 +12,10 @@
     </ul>
 
     {{--Edit People--}}
-    <a href="{{ action('PeoplesController@managePeopleEdit', ['people' => $people]) }}">
-        {!! Form::button('Edit Person', ['class' => 'btn btn-info']) !!}
-    </a>
+    {!! link_to_action('PeoplesController@managePeopleEdit', 'Edit', ['people' => $people], ['class' => 'btn btn-info']) !!}
 
     {{--Delete People--}}
     {!! Form::open(['route' => ['admin.peoples.destroy', $people], 'method' => 'DELETE', 'style'=>'display:inline-block']) !!}
-        {!! Form::submit('Delete Person', ['class' => 'btn btn-danger']) !!}
+    {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
 @endsection

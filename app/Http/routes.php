@@ -26,6 +26,9 @@ Route::get('research', 'PagesController@research');
 // Dashboard
 Route::get('admin', ['middleware' => 'auth', 'uses' => 'UsersController@index']);
 
+// Upload
+Route::post('upload', 'UploadController@upload');
+
 // People
 Route::get('admin/peoples', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleIndex', 'as' => 'admin.peoples']);
 Route::post('admin/peoples', ['middleware' => 'auth', 'uses' => 'PeoplesController@managePeopleStore']);
@@ -61,13 +64,15 @@ Route::get('peoples/{peoples}', 'PeoplesController@show');
 /*---Projects----------------------------------------------------*/
 /*---------------------------------------------------------------*/
 // Projects Route Resource
-Route::resource('projects', 'ProjectsController');
+Route::get('projects', 'ProjectsController@index');
+Route::get('projects/{projects}', 'ProjectsController@show');
 /*---------------------------------------------------------------*/
 
 /*---Publications------------------------------------------------*/
 /*---------------------------------------------------------------*/
 // Publications Route Resource
-Route::resource('publications', 'PublicationsController');
+Route::get('publications', 'PublicationsController@index');
+Route::get('publications/{publications}', 'PublicationsController@show');
 /*---------------------------------------------------------------*/
 
 /*---Authentication----------------------------------------------*/

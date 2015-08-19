@@ -14,83 +14,34 @@ class ProjectsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Response
      */
     public function index()
     {
-        return view('project.index');
-    }
+        $projects = Project::all();
 
-    /**
-     * Show the form for creating a new project.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created project in storage.
-     *
-     * @param  Request  $request
-     * @return Response
-     */
-    public function store(Request $request)
-    {
-        //
+        return view('project.index', ['projects' => $projects]);
     }
 
     /**
      * Display the specified project.
      *
-     * @param  int  $id
-     * @return Response
+     * @param Project $project
+     * @return \Illuminate\View\View
      */
-    public function show($id)
+    public function show(Project $project)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified project.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified project in storage.
-     *
-     * @param  Request  $request
-     * @param  int  $id
-     * @return Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified project from storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function destroy($id)
-    {
-        //
+        return view('project.show', ['project' => $project]);
     }
 
     /**************************************************************/
     /*Admin Management Methods*************************************/
     /**************************************************************/
 
+    /**
+     * Display a listing of all manageable projects.
+     *
+     * @return \Illuminate\View\View
+     */
     public function manageProjectIndex()
     {
         $projects = Project::all();
@@ -98,11 +49,22 @@ class ProjectsController extends Controller
         return view('admin.project.index', ['projects' => $projects]);
     }
 
+    /**
+     * Display the view to create a new project.
+     *
+     * @return \Illuminate\View\View
+     */
     public function manageProjectCreate()
     {
         return view('admin.project.create');
     }
 
+    /**
+     * Store a newly created project in storage.
+     *
+     * @param ProjectRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function manageProjectStore(ProjectRequest $request)
     {
         $project = Project::create($request->all());
@@ -110,16 +72,35 @@ class ProjectsController extends Controller
         return redirect()->action('ProjectsController@manageProjectShow', [$project]);
     }
 
+    /**
+     * Display the specified project.
+     *
+     * @param Project $project
+     * @return \Illuminate\View\View
+     */
     public function manageProjectShow(Project $project)
     {
         return view('admin.project.show', ['project' => $project]);
     }
 
+    /**
+     * Display the view to edit an existing project.
+     *
+     * @param Project $project
+     * @return \Illuminate\View\View
+     */
     public function manageProjectEdit(Project $project)
     {
         return view('admin.project.edit', ['project' => $project]);
     }
 
+    /**
+     * Store changes to an existing project in storage.
+     *
+     * @param ProjectRequest $request
+     * @param Project $project
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function manageProjectUpdate(ProjectRequest $request, Project $project)
     {
         $project->update($request->all());
@@ -127,6 +108,13 @@ class ProjectsController extends Controller
         return redirect()->action('ProjectsController@manageProjectShow', [$project]);
     }
 
+    /**
+     * Delete an existing project from storage.
+     *
+     * @param Project $project
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @throws \Exception
+     */
     function manageProjectDestroy(Project $project)
     {
         $project->delete();
