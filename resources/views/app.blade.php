@@ -33,7 +33,7 @@
 <body>
 @include('partials.nav')
 
-<div class="container">
+<div class="container animated fadeIn">
     @yield('content')
 </div>
 
