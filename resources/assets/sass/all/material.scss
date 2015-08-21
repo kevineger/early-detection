@@ -11,6 +11,9 @@ body {
 .people-info {
   margin-bottom: 40px;
 }
+p {
+  line-height: 30px;
+}
 
 /* TITLE
 ============================================================================= */
@@ -28,7 +31,7 @@ h1.title {
 .header-container {
   margin: 15px;
 }
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-family: 'Crimson Text', serif;
   font-weight: 400;
 }

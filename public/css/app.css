@@ -6004,6 +6004,9 @@ body {
 .people-info {
   margin-bottom: 40px; }
 
+p {
+  line-height: 30px; }
+
 /* TITLE
 ============================================================================= */
 h1.title {
@@ -6019,7 +6022,7 @@ h1.title {
 .header-container {
   margin: 15px; }
 
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-family: 'Crimson Text', serif;
   font-weight: 400; }
 
@@ -6174,8 +6177,51 @@ hr:before {
   .people-info .fa {
     font-size: 600%; }
 
-.people-container {
+.people-container, .people-bio {
   padding: 40px; }
+
+.people-bio h1 {
+  margin-bottom: 0; }
+
+.people-bio h3, .people-bio p.subtitle {
+  color: #8D8E8F; }
+
+.people-bio h3 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.people-bio img {
+  text-align: center;
+  width: 100%;
+  padding: 15px; }
+
+.people-bio p.system-info {
+  text-align: right;
+  color: #8D8E8F; }
+
+.people-bio p.description {
+  padding: 15px; }
+
+.people-bio p:first-child {
+  padding: 30px;
+  line-height: 30px;
+  position: relative; }
+
+.people-bio p:first-child:first-letter {
+  font-size: 72px;
+  float: left;
+  padding: 10px;
+  height: 64px;
+  font-family: 'HominisNormal';
+  background-color: cornflowerblue;
+  margin-right: 10px;
+  color: #f5f4f2;
+  border-radius: 5px;
+  line-height: 70px; }
+
+.people-bio p:first-child:first-line {
+  font-weight: 400;
+  font-size: 24px; }
 
 /* ANIMATION
 ============================================================================= */

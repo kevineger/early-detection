@@ -1,3 +1,4 @@
+@import '../all/colours';
 .people-info {
   .fa {
     font-size: 600%;
@@ -5,8 +6,54 @@
   text-align:center;
 }
 
-.people-container {
+.people-container, .people-bio {
   padding:40px;
+}
+
+.people-bio {
+  h1 {
+    margin-bottom:0;
+  }
+  h3, p.subtitle {
+    color: $subtle;
+  }
+  h3 {
+    margin-top:0;
+    margin-bottom:0;
+  }
+  img {
+    text-align:center;
+    width: 100%;
+    padding: 15px;
+  }
+  p.system-info {
+    text-align:right;
+    color: $subtle;
+  }
+  p.description {
+    padding: 15px;
+  }
+  p:first-child {
+    padding: 30px;
+    line-height: 30px;
+    position: relative;
+  }
+  p:first-child:first-letter {
+    font-size: 72px;
+    float: left;
+    padding: 10px;
+    height: 64px;
+    font-family: 'HominisNormal';
+    background-color: cornflowerblue;
+    margin-right: 10px;
+    color: $off-white;
+    border-radius: 5px;
+    line-height: 70px;
+  }
+  p:first-child:first-line {
+    font-weight: 400;
+    font-size: 24px;
+  }
 }
 
 /* ANIMATION

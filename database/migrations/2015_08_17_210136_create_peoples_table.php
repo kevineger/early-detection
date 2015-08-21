@@ -3,8 +3,8 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePeoplesTable extends Migration
-{
+class CreatePeoplesTable extends Migration {
+
     /**
      * Run the migrations.
      *
@@ -12,15 +12,16 @@ class CreatePeoplesTable extends Migration
      */
     public function up()
     {
-        Schema::create('people', function (Blueprint $table) {
+        Schema::create('people', function (Blueprint $table)
+        {
             $table->increments('id');
             $table->string('name');
             $table->string('type');
             $table->string('position')->nullable();
             $table->string('education')->nullable();
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('image')->default("placeholder.jpg");
-            $table->string('image2')->default("placeholder2.jpg");
+            $table->string('image2')->default("placeholder2.png");
             $table->timestamps();
         });
     }

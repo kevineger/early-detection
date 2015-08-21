@@ -15,6 +15,8 @@ class ProjectTableSeeder extends Seeder
     {
         DB::table('projects')->delete();
 
+        factory(App\Project::class)->create();
+
         Project::create(['name' => 'A great project']);
     }
 }

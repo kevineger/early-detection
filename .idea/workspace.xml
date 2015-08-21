@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707bad9f-caf5-4c95-acc9-fa8bcca79c38" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_17_210136_create_peoples_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_17_210136_create_peoples_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_17_210231_create_projects_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_17_210231_create_projects_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/factories/ModelFactory.php" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/People.php" afterPath="$PROJECT_DIR$/app/People.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/PeopleTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/PeopleTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Project.php" afterPath="$PROJECT_DIR$/app/Project.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/ProjectTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/ProjectTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/all/_colours.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/all/_colours.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css.map" afterPath="$PROJECT_DIR$/public/css/app.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/people/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/people/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/all/material.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/all/material.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/all/nav.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/all/nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/sass/pages/people.scss" afterPath="$PROJECT_DIR$/resources/assets/sass/pages/people.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/people/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/people/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="early-detection.iws" />
@@ -27,56 +42,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PeoplesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PeoplesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-              <folding>
-                <element signature="e#40#76#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/people/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/people/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.44067797">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PeopleTableSeeder.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/seeds/PeopleTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37288135">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelFactory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
+      <file leaf-file-name="material.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/material.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-              <folding>
-                <element signature="e#7#394#0#PHP" expanded="true" />
-              </folding>
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,17 +76,27 @@
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/pages/people.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015_08_17_210136_create_peoples_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_17_210136_create_peoples_table.php">
+      <file leaf-file-name="_colours.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/_colours.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/nav.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -109,20 +110,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/admin/pages/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PublicationsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Project.php" />
         <option value="$PROJECT_DIR$/app/Publication.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/people/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/PeopleRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/project/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/project/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/project/show.blade.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ProjectTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/project/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/ProjectRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
@@ -139,27 +135,32 @@
         <option value="$PROJECT_DIR$/resources/views/admin/people/create.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/resources/views/people/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/people/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/people/form.blade.php" />
         <option value="$PROJECT_DIR$/app/helpers.php" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/all/_colours.scss" />
-        <option value="$PROJECT_DIR$/app/People.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/people/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PeoplesController.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/all/material.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/all/nav.scss" />
         <option value="$PROJECT_DIR$/resources/views/people/partners/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/people/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/pages/people.scss" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_08_17_210231_create_projects_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_08_17_210136_create_peoples_table.php" />
+        <option value="$PROJECT_DIR$/app/People.php" />
+        <option value="$PROJECT_DIR$/app/Project.php" />
+        <option value="$PROJECT_DIR$/database/seeds/ProjectTableSeeder.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/PeopleTableSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/all/nav.scss" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_08_17_210136_create_peoples_table.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/all/material.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/pages/people.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/all/_colours.scss" />
+        <option value="$PROJECT_DIR$/resources/views/people/show.blade.php" />
       </list>
     </option>
   </component>
@@ -174,6 +175,9 @@
   </component>
   <component name="NamedScopeManager">
     <order />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -205,6 +209,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,11 +239,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,68 +253,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="people" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factories" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,16 +271,17 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-follow-up" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="People&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210136_create_peoples_table.php&#10;mate&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;materia&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;PeopleSe&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/PeopleTableSeeder.php&#10;nav.sc&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/nav.scss&#10;nav.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/nav.blade.php&#10;PeoplesCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;routes&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/routes.php&#10;nav.scs&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/nav.scss&#10;fonts/&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/node_modules/bootstrap-sass/assets/fonts&#10;app.scs&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/app.scss&#10;app.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/app.blade.php&#10;index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/people/index.blade.php&#10;app.s&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/app.scss&#10;admin&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/admin-nav.blade.php&#10;global.php&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Global_.php&#10;material&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;app.bl&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/app.blade.php&#10;nav&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/nav.blade.php&#10;home&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/pages/home.blade.php&#10;edit&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/edit.blade.php&#10;show&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/people/show.blade.php&#10;app.b&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/app.blade.php&#10;app&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/config/app.php&#10;web&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/public/js/webtoolkit.aim.js&#10;webtoo&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/public/js/webtoolkit.aim.js&#10;form&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/form.blade.php&#10;create pe&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210136_create_peoples_table.php&#10;composer.j&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/composer.json&#10;config/a&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/config/app.php&#10;Image/Gd/Driver&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php&#10;Driver.php&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php&#10;Settings&#9;ACTION&#9;Database.Settings&#10;config/app&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/config/app.php&#10;Upload&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/UploadController.php&#10;seed&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/ProjectTableSeeder.php&#10;create&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/create.blade.php&#10;PeopleRe&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Requests/PeopleRequest.php&#10;Peoplescon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;Projects&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/ProjectsController.php&#10;PeoplesC&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;Kernel&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Kernel.php&#10;partials/&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials&#10;AuthCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/Auth/AuthController.php&#10;Peoples&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;PeopleCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;projectR&#9;null&#9;null&#10;PeopleC&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;ProjectsCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/ProjectsController.php&#10;show.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/show.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="nav.scs&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/nav.scss&#10;colours&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/_colours.scss&#10;peoplestable&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210136_create_peoples_table.php&#10;nav.s&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/nav.scss&#10;nav.bla&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/nav.blade.php&#10;colour&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/_colours.scss&#10;people.scs&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/people.scss&#10;Project&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Project.php&#10;People&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/People.php&#10;Factor&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/factories/ModelFactory.php&#10;PEopleSeeder&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/PeopleTableSeeder.php&#10;create_pro&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210231_create_projects_table.php&#10;people&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210136_create_peoples_table.php&#10;model&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/factories/ModelFactory.php&#10;mater&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;show&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/people/show.blade.php&#10;peoples table&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210136_create_peoples_table.php&#10;index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/people/index.blade.php&#10;mate&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;materia&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;PeopleSe&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/PeopleTableSeeder.php&#10;nav.sc&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/nav.scss&#10;nav.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/nav.blade.php&#10;PeoplesCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;routes&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/routes.php&#10;fonts/&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/node_modules/bootstrap-sass/assets/fonts&#10;app.scs&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/app.scss&#10;app.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/app.blade.php&#10;app.s&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/app.scss&#10;admin&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/admin-nav.blade.php&#10;global.php&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/Global_.php&#10;material&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;app.bl&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/app.blade.php&#10;nav&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/nav.blade.php&#10;home&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/pages/home.blade.php&#10;edit&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/edit.blade.php&#10;app.b&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/app.blade.php&#10;app&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/config/app.php&#10;web&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/public/js/webtoolkit.aim.js&#10;webtoo&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/public/js/webtoolkit.aim.js&#10;form&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/form.blade.php&#10;create pe&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210136_create_peoples_table.php&#10;composer.j&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/composer.json&#10;config/a&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/config/app.php&#10;Image/Gd/Driver&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php&#10;Driver.php&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php&#10;Settings&#9;ACTION&#9;Database.Settings&#10;config/app&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/config/app.php&#10;Upload&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/UploadController.php&#10;seed&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/ProjectTableSeeder.php" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/resources/views/people/staff" />
       <recent name="$PROJECT_DIR$/resources/views/people/students" />
       <recent name="$PROJECT_DIR$/resources/views/people" />
-      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -438,14 +389,19 @@
       <option name="project" value="LOCAL" />
       <updated>1440116510916</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adds random people seeder">
+      <created>1440118092329</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1440118092329</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="24" width="1867" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -458,15 +414,24 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292789" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -482,7 +447,8 @@
     <MESSAGE value="Image upload for edit" />
     <MESSAGE value="Styles Navbar" />
     <MESSAGE value="Adds people flip to index" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds people flip to index" />
+    <MESSAGE value="Adds random people seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds random people seeder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -569,18 +535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProjectTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2881356">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/PeopleRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18644068">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42372882">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="31" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27118644">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,19 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44067797">
-          <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/people/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3220339">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13559322">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16949153">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,43 +678,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/_colours.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40677965">
-          <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5254237">
           <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/nav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18644068">
-          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/People.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7966102">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,52 +703,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/material.scss">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_17_210231_create_projects_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.016949153">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/pages/people.scss">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.5084746">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/people/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/ProjectTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/people/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding>
-            <element signature="e#7#394#0#PHP" expanded="true" />
+            <element signature="e#7#23#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_17_210136_create_peoples_table.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.2881356">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -847,7 +740,107 @@
     <entry file="file://$PROJECT_DIR$/database/seeds/PeopleTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37288135">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#7#22#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/People.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23728813">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3898305">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86440676">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+          <folding>
+            <element signature="e#7#394#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/people/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18644068">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_17_210136_create_peoples_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37288135">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7288136">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/_colours.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/pages/people.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/all/material.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/people/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44067797">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -20,12 +20,17 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
+/*
+|--------------------------------------------------------------------------
+| People
+|--------------------------------------------------------------------------
+*/
 $factory->define(App\People::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->firstName . ' ' . $faker->lastName,
         'position' => 'Research Intern',
         'education' => 'University of British Columbia Okanagan',
-        'description' => $faker->paragraph(10),
+        'description' => $faker->paragraph(20),
     ];
 });
 
@@ -52,4 +57,15 @@ $factory->defineAs(App\People::class, 'past_staff', function (Faker\Generator $f
 $factory->defineAs(App\People::class, 'partner', function (Faker\Generator $faker) use ($factory) {
     $people = $factory->raw(App\People::class);
     return array_merge($people, ['type' => 'partner', 'position' => null, 'education' => null, 'description' => null]);
+});
+
+/*
+|--------------------------------------------------------------------------
+| Project
+|--------------------------------------------------------------------------
+*/
+$factory->define(App\Project::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->sentence(),
+    ];
 });
