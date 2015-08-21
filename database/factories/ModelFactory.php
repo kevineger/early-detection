@@ -19,3 +19,37 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\People::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->firstName . ' ' . $faker->lastName,
+        'position' => 'Research Intern',
+        'education' => 'University of British Columbia Okanagan',
+        'description' => $faker->paragraph(10),
+    ];
+});
+
+$factory->defineAs(App\People::class, 'current_student', function (Faker\Generator $faker) use ($factory) {
+    $people = $factory->raw(App\People::class);
+    return array_merge($people, ['type' => 'current_student']);
+});
+
+$factory->defineAs(App\People::class, 'past_student', function (Faker\Generator $faker) use ($factory) {
+    $people = $factory->raw(App\People::class);
+    return array_merge($people, ['type' => 'past_student']);
+});
+
+$factory->defineAs(App\People::class, 'current_staff', function (Faker\Generator $faker) use ($factory) {
+    $people = $factory->raw(App\People::class);
+    return array_merge($people, ['type' => 'current_staff', 'position' => 'Medical Physicist']);
+});
+
+$factory->defineAs(App\People::class, 'past_staff', function (Faker\Generator $faker) use ($factory) {
+    $people = $factory->raw(App\People::class);
+    return array_merge($people, ['type' => 'past_staff', 'position' => 'Medical Physicist']);
+});
+
+$factory->defineAs(App\People::class, 'partner', function (Faker\Generator $faker) use ($factory) {
+    $people = $factory->raw(App\People::class);
+    return array_merge($people, ['type' => 'partner', 'position' => null, 'education' => null, 'description' => null]);
+});

@@ -16,9 +16,9 @@ class CreatePeoplesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('type');
-            $table->string('position');
-            $table->string('education');
-            $table->string('description');
+            $table->string('position')->nullable();
+            $table->string('education')->nullable();
+            $table->string('description')->nullable();
             $table->string('image')->default("placeholder.jpg");
             $table->string('image2')->default("placeholder2.jpg");
             $table->timestamps();
