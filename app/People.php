@@ -48,4 +48,14 @@ class People extends Model
         }
     }
 
+    /**
+     * Get the list of current students.
+     *
+     * @return mixed
+     */
+    public static function getPeopleType($type)
+    {
+        return People::where('type', '=', $type)->get();
+    }
+
 }

@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   background-color: transparent;
 }
@@ -6,7 +7,8 @@ li.dropdown ul.dropdown-menu {
   //position:relative;
 }
 #cssmenu {
-  background: #fff;
+  -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+  background: $navbar-background;
   width: auto;
   text-align: center;
 }
@@ -112,7 +114,7 @@ li.dropdown ul.dropdown-menu {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-bottom: 1px solid #fb998c;
+    border-bottom: 1px solid #000;
   }
   #cssmenu ul li.last > a,
   #cssmenu ul li:last-child > a {

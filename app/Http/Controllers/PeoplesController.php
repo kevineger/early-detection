@@ -14,6 +14,7 @@ use Image;
 
 class PeoplesController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -22,7 +23,39 @@ class PeoplesController extends Controller
     {
         $peoples = People::all();
 
+        return view('people.dashboard', ['peoples' => $peoples]);
+    }
+
+    /**
+     * Display a listing of people with specified type.
+     *
+     */
+    public function indexType(Request $request)
+    {
+        $peoples = People::all();
+
+        // Get the correct people
+        if ($request->is('*/current-students')) {
+            $peoples = People::getPeopleType('current_student');
+        }
+        else if ($request->is('*/past-students')) {
+            $peoples = People::getPeopleType('past_student');
+        }
+        else if ($request->is('*/current-staff')) {
+            $peoples = People::getPeopleType('current_staff');
+        }
+        else if ($request->is('*/past-staff')) {
+            $peoples = People::getPeopleType('past_staff');
+        }
+
         return view('people.index', ['peoples' => $peoples]);
+    }
+
+    public function indexPartners()
+    {
+        $peoples = People::getPeopleType('partner');
+
+        return view('people.partners.index', ['peoples' => $peoples]);
     }
 
     /**

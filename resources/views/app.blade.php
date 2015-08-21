@@ -27,10 +27,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     {{-------------------------------------------------------------------------}}
 
+    {{---Fonts-----------------------------------------------------------------}}
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text:600,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    {{-------------------------------------------------------------------------}}
+
     @yield('head')
 
 </head>
 <body>
+
+<h1 class="title">Early Detection</h1>
 @include('partials.nav')
 
 <div class="container animated fadeIn">
