@@ -24,4 +24,14 @@ class Project extends Model
     {
         return $this->belongsToMany('App\People');
     }
+
+    /**
+     * A Project belongsTo ProjectCategory.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function category()
+    {
+        return $this->belongsTo('App\ProjectCategory', 'project_category_id');
+    }
 }

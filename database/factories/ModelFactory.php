@@ -61,12 +61,24 @@ $factory->defineAs(App\People::class, 'partner', function (Faker\Generator $fake
 
 /*
 |--------------------------------------------------------------------------
+| Project Categories
+|--------------------------------------------------------------------------
+*/
+$factory->define(App\ProjectCategory::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->sentence(),
+    ];
+});
+
+/*
+|--------------------------------------------------------------------------
 | Project
 |--------------------------------------------------------------------------
 */
 $factory->define(App\Project::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->sentence(),
+        'project_category_id' => $faker->numberBetween(1, 4),
     ];
 });
 
