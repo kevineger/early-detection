@@ -2,6 +2,7 @@
 
 @section('head')
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="{{ asset('js/sorttable.js') }}"></script>
 @endsection
 
 @section('content')
@@ -16,14 +17,16 @@
         {!! Form::close() !!}
     </div>
     <div class="col-sm-9">
-        <table class="table">
+        <table class="table sortable">
             <th>Name</th>
-            <th>Actions</th>
+            <th>Category</th>
+            <th style="width: 110px;">Actions</th>
             @foreach($projects as $project)
                 <tr>
                     <td>
                         <a href="{{ action('ProjectsController@manageProjectShow', [$project]) }}">{{ $project->name }}</a>
                     </td>
+                    <td>{{ $project->category->name }}</td>
                     <td>
                         <a href="{{ action('ProjectsController@manageProjectEdit', [$project]) }}" class="btn btn-info"><i class="fa fa-pencil fa-lg"></i></a>
                         {!! Form::open(['route' => ['admin.projects.destroy', $project], 'method' => 'DELETE', 'style' => 'display:inline']) !!}

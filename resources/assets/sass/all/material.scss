@@ -19,12 +19,31 @@ p.subtitle {
   color: $subtle;
 }
 
-.btn-group{
+.btn-group {
   width:100%;
   text-align:center;
   button.btn {
     float:none;
   }
+}
+
+h1, h2, h3, h4, h5, p, table {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* TABLE
+============================================================================= */
+/* Sortable tables */
+table.sortable th {
+  background-color:#eee;
+  color:#666666;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* TITLE

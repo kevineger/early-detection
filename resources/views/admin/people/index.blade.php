@@ -2,6 +2,7 @@
 
 @section('head')
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="{{ asset('js/sorttable.js') }}"></script>
 @endsection
 
 @section('content')
@@ -40,7 +41,7 @@
         </div>
     </div>
     <div class="col-sm-10">
-        <table class="table">
+        <table class="table sortable">
             <th>Name</th>
             <th>Type</th>
             <th>Position</th>
