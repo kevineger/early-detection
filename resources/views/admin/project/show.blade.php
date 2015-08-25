@@ -4,6 +4,7 @@
     <h1>Project Show</h1>
     <ul>
         <li>Name: {{ $project->name }}</li>
+        <li>Category: {{ $project->category->name }}</li>
         <li>Added to system: {{ $project->created_at->diffForHumans() }}</li>
     </ul>
 

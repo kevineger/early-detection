@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ProjectRequest;
 use App\Project;
+use App\ProjectCategory;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -63,7 +64,9 @@ class ProjectsController extends Controller
      */
     public function manageProjectCreate()
     {
-        return view('admin.project.create');
+        $category_list = ProjectCategory::lists('name', 'id');
+
+        return view('admin.project.create', ['category_list' => $category_list]);
     }
 
     /**
@@ -74,7 +77,11 @@ class ProjectsController extends Controller
      */
     public function manageProjectStore(ProjectRequest $request)
     {
-        $project = Project::create($request->all());
+        $category = ProjectCategory::firstorCreate(['name' => $request->project_category_id]);
+        $project = new Project;
+        $project->name = $request->name;
+        $project->project_category_id = $category->id;
+        $project->save();
 
         return redirect()->action('ProjectsController@manageProjectShow', [$project]);
     }
@@ -98,7 +105,9 @@ class ProjectsController extends Controller
      */
     public function manageProjectEdit(Project $project)
     {
-        return view('admin.project.edit', ['project' => $project]);
+        $category_list = ProjectCategory::lists('name', 'id');
+
+        return view('admin.project.edit', ['project' => $project, 'category_list' => $category_list]);
     }
 
     /**
@@ -110,7 +119,10 @@ class ProjectsController extends Controller
      */
     public function manageProjectUpdate(ProjectRequest $request, Project $project)
     {
-        $project->update($request->all());
+        $category = ProjectCategory::firstorCreate(['name' => $request->project_category_id]);
+        $project->name = $request->name;
+        $project->project_category_id = $category->id;
+        $project->save();
 
         return redirect()->action('ProjectsController@manageProjectShow', [$project]);
     }
