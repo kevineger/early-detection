@@ -1,0 +1,84 @@
+@import 'colours';
+
+.group {
+  position:relative;
+  margin-bottom:35px;
+}
+input.material, textarea {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid $subtle;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+input:focus, textarea:focus     { outline:none; }
+
+/* LABEL ======================================= */
+label.material          {
+  color:$subtle;
+  font-size:17px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:10px;
+  top:12px;
+  transition:0.2s ease all;
+}
+
+/* active state */
+input.material:focus ~ label.material, input.material:valid ~ label.material
+,textarea:focus ~ label, textarea:valid ~ label.material {
+  top:-20px;
+  left:5px;
+  font-size:14px;
+  color: $highlight;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:100%; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:$highlight;
+  transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input.material:focus ~ .bar:before, input.material:focus ~ .bar:after,
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+/* SELECT2 */
+.select2-group .select2-container > .selection > .select2-selection {
+  .select2-selection__arrow {
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  height:50px;
+  font-size:18px;
+  font-weight:normal;
+  padding:10px 10px 10px 5px;
+  outline:none;
+}
+.select2-group {
+  margin-top: -10px;
+  label {
+    font-size:14px;
+    color:$highlight;
+    font-weight:normal;
+    padding-left: 5px;
+  }
+}

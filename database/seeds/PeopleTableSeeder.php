@@ -27,6 +27,9 @@ class PeopleTableSeeder extends Seeder {
             });
         factory(App\People::class, 'current_staff', 6)->create();
         factory(App\People::class, 'past_staff', 4)->create();
-        factory(App\People::class, 'partner', 30)->create();
+        factory(App\People::class, 'partner', 30)->create()
+            ->each(function($p) {
+                $p->links()->save(factory(App\Link::class)->make());
+            });
     }
 }

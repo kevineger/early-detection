@@ -1,25 +1,35 @@
-@extends('app')
+@extends('admin')
 
 @section('content')
-    <form method="POST" action="/auth/login">
-        {!! csrf_field() !!}
 
-        <div>
-            Email
-            <input type="email" name="email" value="{{ old('email') }}">
+    <div class="col-lg-6 col-lg-offset-3">
+        {!! Form::open() !!}
+        <div class="group">
+            <input class="material" name="email" type="email" value="{{ old('email') }}" required>
+            <span class="bar"></span>
+            <label class="material">e-mail</label>
         </div>
 
-        <div>
-            Password
-            <input type="password" name="password" id="password">
+        <div class="group">
+            <input class="material" name="password" type="password" required>
+            <span class="bar"></span>
+            <label class="material">Password</label>
         </div>
 
-        <div>
-            <input type="checkbox" name="remember"> Remember Me
+        <input type="hidden" name="remember">
+
+        @if ($errors->any())
+            <ul class="alert alert-danger" style="list-style-type: none">
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
+
+        <div class="btn-group">
+            {!! Form::button('Login', ['class' => 'btn btn-primary', 'type' => 'submit']) !!}
         </div>
 
-        <div>
-            <button type="submit">Login</button>
-        </div>
-    </form>
+        {!! Form::close() !!}
+    </div>
 @endsection

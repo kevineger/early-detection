@@ -17,6 +17,7 @@
 Route::get('/', 'PagesController@home');
 // Contact Us
 Route::get('contact', 'PagesController@contact');
+Route::post('contact', 'MailController@send');
 // Research Opportunities
 Route::get('research', 'PagesController@research');
 /*---------------------------------------------------------------*/
@@ -24,23 +25,25 @@ Route::get('research', 'PagesController@research');
 /*---Administration----------------------------------------------*/
 /*---------------------------------------------------------------*/
 Route::group(['middleware' => 'auth'], function () {
-// Dashboard
+    // Dashboard
     Route::get('admin', ['uses' => 'UsersController@index']);
 
-// Upload
+    // Upload
     Route::post('upload', 'UploadController@upload');
 
-// People
+    // People
     Route::get('admin/peoples', ['uses' => 'PeoplesController@managePeopleIndex', 'as' => 'admin.peoples']);
+    Route::put('admin/peoples', ['uses' => 'PeoplesController@managePeopleIndex']);
     Route::post('admin/peoples', ['uses' => 'PeoplesController@managePeopleStore']);
     Route::get('admin/peoples/create', ['uses' => 'PeoplesController@managePeopleCreate']);
-    Route::get('admin/peoples/{peoples}/edit', ['uses' => 'PeoplesController@managePeopleEdit']);
+    Route::get('admin/peoples/{peoples}/edit', ['uses' => 'PeoplesController@managePeopleEdit', 'as' => 'admin.peoples.edit']);
     Route::patch('admin/peoples/{peoples}', ['uses' => 'PeoplesController@managePeopleUpdate']);
     Route::delete('admin/peoples/{peoples}', ['uses' => 'PeoplesController@managePeopleDestroy', 'as' => 'admin.peoples.destroy']);
     Route::get('admin/peoples/{peoples}', ['uses' => 'PeoplesController@managePeopleShow']);
 
-// Projects
+    // Projects
     Route::get('admin/projects', ['uses' => 'ProjectsController@manageProjectIndex', 'as' => 'admin.projects']);
+    Route::put('admin/projects', ['uses' => 'ProjectsController@manageProjectIndex']);
     Route::post('admin/projects', ['uses' => 'ProjectsController@manageProjectStore']);
     Route::get('admin/projects/create', ['uses' => 'ProjectsController@manageProjectCreate']);
     Route::get('admin/projects/{projects}/edit', ['uses' => 'ProjectsController@manageProjectEdit']);
@@ -48,10 +51,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('admin/projects/{projects}', ['uses' => 'ProjectsController@manageProjectDestroy', 'as' => 'admin.projects.destroy']);
     Route::get('admin/projects/{projects}', ['uses' => 'ProjectsController@manageProjectShow']);
 
-// Publications
+    // Publications
     Route::get('admin/publications', ['uses' => 'PublicationsController@managePublicationIndex']);
 
-// Pages
+    // Pages
     Route::get('admin/pages', ['uses' => 'PagesController@managePublicationIndex']);
 });
 /*---------------------------------------------------------------*/

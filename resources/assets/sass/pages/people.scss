@@ -43,11 +43,11 @@
     float: left;
     padding: 10px;
     height: 64px;
-    font-family: 'HominisNormal';
-    background-color: cornflowerblue;
+    font-family: 'HominisNormal', serif;
+    background-color: $highlight;
     margin-right: 10px;
     color: $off-white;
-    border-radius: 5px;
+    border-radius: 3px;
     line-height: 70px;
   }
   p:first-child:first-line {

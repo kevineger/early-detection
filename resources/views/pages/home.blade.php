@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <h2>Who We Are</h2>
+                <h2 style="margin-top:0">Who We Are</h2>
 
                 <p>Our research team, led by Rasika Rajapakshe, works at the BC Cancer Agency's Center for the Southern
                     Interior, located in the breath-taking city of Kelowna, British Columbia, where Rasika is a senior

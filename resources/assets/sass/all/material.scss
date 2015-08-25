@@ -15,6 +15,18 @@ p {
   line-height: 30px;
 }
 
+p.subtitle {
+  color: $subtle;
+}
+
+.btn-group{
+  width:100%;
+  text-align:center;
+  button.btn {
+    float:none;
+  }
+}
+
 /* TITLE
 ============================================================================= */
 h1.title {

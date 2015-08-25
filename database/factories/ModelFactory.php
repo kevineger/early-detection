@@ -56,7 +56,7 @@ $factory->defineAs(App\People::class, 'past_staff', function (Faker\Generator $f
 
 $factory->defineAs(App\People::class, 'partner', function (Faker\Generator $faker) use ($factory) {
     $people = $factory->raw(App\People::class);
-    return array_merge($people, ['type' => 'partner', 'position' => null, 'education' => null, 'description' => null]);
+    return array_merge($people, ['type' => 'partner', 'position' => null, 'education' => null, 'description' => $faker->company]);
 });
 
 /*
@@ -67,5 +67,16 @@ $factory->defineAs(App\People::class, 'partner', function (Faker\Generator $fake
 $factory->define(App\Project::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->sentence(),
+    ];
+});
+
+/*
+|--------------------------------------------------------------------------
+| Link
+|--------------------------------------------------------------------------
+*/
+$factory->define(App\Link::class, function (Faker\Generator $faker) {
+    return [
+        'link' => $faker->url,
     ];
 });

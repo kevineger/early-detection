@@ -42,9 +42,16 @@ class ProjectsController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function manageProjectIndex()
+    public function manageProjectIndex(Request $request)
     {
-        $projects = Project::all();
+        // If request is a search
+        if ($request->method()==="PUT") {
+            $projects = Project::where('name', 'LIKE', '%'. $request->search .'%')->get();
+        }
+        else
+        {
+            $projects = Project::all();
+        }
 
         return view('admin.project.index', ['projects' => $projects]);
     }

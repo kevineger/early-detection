@@ -33,7 +33,7 @@
 <body>
 @include('partials.admin-nav')
 
-<div class="container">
+<div style="margin-top: 100px;" class="container">
     @yield('content')
 </div>
 

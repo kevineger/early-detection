@@ -6007,6 +6007,15 @@ body {
 p {
   line-height: 30px; }
 
+p.subtitle {
+  color: #8D8E8F; }
+
+.btn-group {
+  width: 100%;
+  text-align: center; }
+  .btn-group button.btn {
+    float: none; }
+
 /* TITLE
 ============================================================================= */
 h1.title {
@@ -6172,6 +6181,87 @@ hr:before {
   #cssmenu ul li a:before {
     display: none; } }
 
+.group {
+  position: relative;
+  margin-bottom: 35px; }
+
+input.material, textarea {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #8D8E8F;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+input:focus, textarea:focus {
+  outline: none; }
+
+/* LABEL ======================================= */
+label.material {
+  color: #8D8E8F;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 12px;
+  transition: 0.2s ease all; }
+
+/* active state */
+input.material:focus ~ label.material, input.material:valid ~ label.material
+, textarea:focus ~ label, textarea:valid ~ label.material {
+  top: -20px;
+  left: 5px;
+  font-size: 14px;
+  color: cornflowerblue; }
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 100%; }
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: cornflowerblue;
+  transition: 0.2s ease all; }
+
+.bar:before {
+  left: 50%; }
+
+.bar:after {
+  right: 50%; }
+
+/* active state */
+input.material:focus ~ .bar:before, input.material:focus ~ .bar:after,
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width: 50%; }
+
+/* SELECT2 */
+.select2-group .select2-container > .selection > .select2-selection {
+  height: 50px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 10px 10px 10px 5px;
+  outline: none; }
+  .select2-group .select2-container > .selection > .select2-selection .select2-selection__arrow {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.select2-group {
+  margin-top: -10px; }
+  .select2-group label {
+    font-size: 14px;
+    color: cornflowerblue;
+    font-weight: normal;
+    padding-left: 5px; }
+
 .people-info {
   text-align: center; }
   .people-info .fa {
@@ -6212,11 +6302,11 @@ hr:before {
   float: left;
   padding: 10px;
   height: 64px;
-  font-family: 'HominisNormal';
+  font-family: 'HominisNormal', serif;
   background-color: cornflowerblue;
   margin-right: 10px;
   color: #f5f4f2;
-  border-radius: 5px;
+  border-radius: 3px;
   line-height: 70px; }
 
 .people-bio p:first-child:first-line {
@@ -6271,5 +6361,27 @@ hr:before {
 .back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg); }
+
+#map-canvas {
+  width: 100%;
+  height: 271px;
+  border: 1px solid #e3e3e3; }
+
+.contact-info-container {
+  padding: 40px; }
+  .contact-info-container h3 {
+    margin-top: 0; }
+  .contact-info-container p {
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: 1.2em; }
+  .contact-info-container input {
+    text-align: left; }
+
+p.subtitle {
+  text-align: center; }
+
+textarea {
+  resize: none; }
 
 /*# sourceMappingURL=app.css.map */

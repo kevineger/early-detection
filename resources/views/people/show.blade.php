@@ -8,7 +8,7 @@
 
                 <h3>{{ $people->education }}</h3>
 
-                <p class="subtitle">{{ $people->getTextType() }} | {{ $people->position }}</p>
+                <p class="subtitle" style="float:left">{{ $people->getTextType() }} | {{ $people->position }}</p>
             </div>
             <div class="col-lg-7">
                 <p class="description">{{ $people->description }}</p>

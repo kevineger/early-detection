@@ -72,4 +72,14 @@ class People extends Model
         return People::where('type', '=', $type)->get();
     }
 
+    /**
+     * A people hasMany links
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function links()
+    {
+        return $this->hasMany('App\Link');
+    }
+
 }

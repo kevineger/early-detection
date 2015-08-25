@@ -55,7 +55,7 @@ class PeoplesController extends Controller
     {
         $peoples = People::getPeopleType('partner');
 
-        return view('people.partners.index', ['peoples' => $peoples]);
+        return view('people.partners', ['peoples' => $peoples]);
     }
 
     /**
@@ -76,11 +76,26 @@ class PeoplesController extends Controller
     /**
      * Display a listing of all manageable people.
      *
+     * @param Request $request
      * @return \Illuminate\View\View
      */
-    public function managePeopleIndex()
+    public function managePeopleIndex(Request $request)
     {
-        $peoples = People::all();
+        // If request is a search
+        if ($request->method()==="PUT") {
+            $peoples = People::where('name', 'LIKE', '%'. $request->search .'%')
+                ->where(function ($query) use ($request) {
+                    if($request->curr_student_checkbox != null) $query->orWhere('type', '=', 'current_student');
+                    if($request->past_student_checkbox != null) $query->orWhere('type', '=', 'past_student');
+                    if($request->curr_staff_checkbox != null) $query->orWhere('type', '=', 'current_staff');
+                    if($request->past_staff_checkbox != null) $query->orWhere('type', '=', 'past_staff');
+                    if($request->partner_checkbox != null) $query->orWhere('type', '=', 'partner');
+                })
+                ->get();
+        }
+        else {
+            $peoples = People::all();
+        }
 
         return view('admin.people.index', ['peoples' => $peoples]);
     }
@@ -172,6 +187,7 @@ class PeoplesController extends Controller
      */
     public function managePeopleDestroy(People $people)
     {
+//        dd($people);
         $people->delete();
 
         return redirect('admin/peoples');
