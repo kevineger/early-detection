@@ -6283,9 +6283,12 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
     padding-left: 5px; }
 
 .people-info {
-  text-align: center; }
+  text-align: center;
+  margin-top: 30px; }
   .people-info .fa {
     font-size: 600%; }
+  .people-info h3 {
+    margin: 5px 0 5px 0; }
 
 .people-container, .people-bio {
   padding: 40px; }
@@ -6336,6 +6339,19 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
 .people-bio ul.projects {
   list-style: none;
   padding-left: 0; }
+
+.carousel, .carousel-inner, .carousel-control {
+  border-radius: 4px; }
+
+.item img {
+  border-radius: 4px; }
+
+.item .carousel-caption h1 {
+  border-radius: 4px;
+  color: cornflowerblue;
+  padding: 20px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7); }
 
 /* ANIMATION
 ============================================================================= */
