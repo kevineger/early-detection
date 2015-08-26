@@ -33,12 +33,12 @@
   p.description {
     padding: 15px;
   }
-  p:first-child {
+  p.description:first-child {
     padding: 30px;
     line-height: 30px;
     position: relative;
   }
-  p:first-child:first-letter {
+  p.description:first-child:first-letter {
     font-size: 72px;
     float: left;
     padding: 10px;
@@ -50,9 +50,13 @@
     border-radius: 3px;
     line-height: 70px;
   }
-  p:first-child:first-line {
+  p.description:first-child:first-line {
     font-weight: 400;
     font-size: 24px;
+  }
+  ul.projects {
+    list-style: none;
+    padding-left:0;
   }
 }
 

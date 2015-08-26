@@ -6,12 +6,12 @@
             <div class="col-lg-12">
                 <h1>{{ $people->name }}</h1>
 
-                <h3>{{ $people->education }}</h3>
+                <h3>{!! nl2br($people->education) !!}</h3>
 
                 <p class="subtitle" style="float:left">{{ $people->getTextType() }} | {{ $people->position }}</p>
             </div>
             <div class="col-lg-7">
-                <p class="description">{{ $people->description }}</p>
+                <p class="description">{!! nl2br($people->description) !!}</p>
             </div>
             <div class="col-lg-5">
                 <div class="row">
@@ -19,9 +19,18 @@
                         <img src="{{ asset('images/' . $people->image) }}" alt="image">
                     </div>
                 </div>
-                @foreach ( $people->projects as $project )
-                    <p><strong>Project:</strong> {{ $project->name }}</p>
-                @endforeach
+                <div class="col-lg-8 col-lg-offset-2">
+                    @if ( count($people->projects)>1 )
+                        <h4>Projects</h4>
+                    @elseif ( count($people->projects) == 1)
+                        <h4>Project</h4>
+                    @endif
+                    <ul class="projects">
+                        @foreach ( $people->projects as $project )
+                            <li class="projects">{{ $project->name }}</li>
+                        @endforeach
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="row">

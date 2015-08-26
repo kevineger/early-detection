@@ -18,7 +18,7 @@
                                 <!-- back content -->
                                 <h2>{{ $people->name }}</h2>
                                 <h3>{{ $people->position }}</h3>
-                                <h4>{{ $people->education }}</h4>
+                                <h4>{!! nl2br($people->education) !!}</h4>
                             </div>
                         </div>
                     </div>

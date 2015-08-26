@@ -1,7 +1,5 @@
 <?php
 
-use App\People;
-use App\Project;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 

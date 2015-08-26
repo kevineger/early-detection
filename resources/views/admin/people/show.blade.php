@@ -7,6 +7,9 @@
         <li>Type: {{ $people->getTextType() }}</li>
         <li>Position: {{ $people->position }}</li>
         <li>Education: {{ $people->education }}</li>
+        @foreach( $people->projects as $project )
+            <li>Project: {{ $project->name }}</li>
+        @endforeach
         <li>Description: {{ $people->description }}</li>
         <li>Added to system: {{ $people->created_at->diffForHumans() }}</li>
     </ul>

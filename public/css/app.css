@@ -6010,6 +6010,9 @@ p {
 p.subtitle {
   color: #8D8E8F; }
 
+p.center {
+  text-align: center; }
+
 .btn-group {
   width: 100%;
   text-align: center; }
@@ -6309,12 +6312,12 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
 .people-bio p.description {
   padding: 15px; }
 
-.people-bio p:first-child {
+.people-bio p.description:first-child {
   padding: 30px;
   line-height: 30px;
   position: relative; }
 
-.people-bio p:first-child:first-letter {
+.people-bio p.description:first-child:first-letter {
   font-size: 72px;
   float: left;
   padding: 10px;
@@ -6326,9 +6329,13 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
   border-radius: 3px;
   line-height: 70px; }
 
-.people-bio p:first-child:first-line {
+.people-bio p.description:first-child:first-line {
   font-weight: 400;
   font-size: 24px; }
+
+.people-bio ul.projects {
+  list-style: none;
+  padding-left: 0; }
 
 /* ANIMATION
 ============================================================================= */
