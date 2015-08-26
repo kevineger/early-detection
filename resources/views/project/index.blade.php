@@ -1,10 +1,15 @@
 @extends('app')
 
 @section('content')
-    <h1>Project Index</h1>
-    <ul>
-        @foreach( $projects as $project )
-            <li><a href="{{ action('ProjectsController@show', [$project]) }}">{{ $project->name }}</a></li>
+    <h1>Projects</h1>
+    <div class="row">
+        @foreach ( $project_categories as $category )
+            <div class="col-md-6">
+                <h3>{{ $category->name }}</h3>
+                @foreach( $category->projects as $project )
+                    <p><a href="{{ action('ProjectsController@show', [$project]) }}">{{ $project->name }}</a></p>
+                @endforeach
+            </div>
         @endforeach
-    </ul>
+    </div>
 @endsection

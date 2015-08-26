@@ -18,9 +18,9 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = Project::all();
+        $project_categories = ProjectCategory::all();
 
-        return view('project.index', ['projects' => $projects]);
+        return view('project.index', ['project_categories' => $project_categories]);
     }
 
     /**
@@ -77,9 +77,10 @@ class ProjectsController extends Controller
      */
     public function manageProjectStore(ProjectRequest $request)
     {
-        $category = ProjectCategory::firstorCreate(['name' => $request->project_category_id]);
+        $category = ProjectCategory::firstorCreate(['id' => $request->project_category_id]);
         $project = new Project;
         $project->name = $request->name;
+        $project->description = $request->description;
         $project->project_category_id = $category->id;
         $project->save();
 

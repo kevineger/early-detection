@@ -78,8 +78,35 @@ $factory->define(App\ProjectCategory::class, function (Faker\Generator $faker) {
 $factory->define(App\Project::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->sentence(),
+        'description' => $faker->paragraph(10),
         'project_category_id' => $faker->numberBetween(1, 4),
     ];
+});
+
+/*
+|--------------------------------------------------------------------------
+| Publication
+|--------------------------------------------------------------------------
+*/
+$factory->define(App\Publication::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->sentence(),
+        'reference' => $faker->paragraph(2),
+        'url' => $faker->url,
+        'date' => $faker->dateTimeBetween('-5years', 'now'),
+    ];
+});
+$factory->defineAs(App\Publication::class, 'abstractConferenceCommentary', function (Faker\Generator $faker) use ($factory) {
+    $publication = $factory->raw(App\Publication::class);
+    return array_merge($publication, ['type' => 'abstract_conference_commentary']);
+});
+$factory->defineAs(App\Publication::class, 'journal', function (Faker\Generator $faker) use ($factory) {
+    $publication = $factory->raw(App\Publication::class);
+    return array_merge($publication, ['type' => 'journal']);
+});
+$factory->defineAs(App\Publication::class, 'thesis', function (Faker\Generator $faker) use ($factory) {
+    $publication = $factory->raw(App\Publication::class);
+    return array_merge($publication, ['type' => 'thesis']);
 });
 
 /*

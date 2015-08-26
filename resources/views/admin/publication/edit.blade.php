@@ -6,10 +6,9 @@
 @endsection
 
 @section('content')
-
-    <h1>Create a Project</h1>
-    {!! Form::model($project = new App\Project, ['url' => 'admin/projects', 'files'=> true]) !!}
-        @include('admin.project.form', ['submitButtonText' => 'Add Project'])
+    <h1>Edit a Publication</h1>
+    {!! Form::model($publication, ['method' => 'PATCH', 'action' => ['PublicationsController@managePublicationUpdate', $publication]]) !!}
+        @include('admin.publication.form', ['submitButtonText' => 'Edit Publication'])
     {!! Form::close() !!}
 
     {{--Print out any errors--}}
@@ -20,4 +19,12 @@
             @endforeach
         </ul>
     @endif
+@endsection
+
+@section('footer')
+    <script>
+        $(".js-tags").select2({
+            tags: true
+        })
+    </script>
 @endsection

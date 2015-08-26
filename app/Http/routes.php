@@ -20,7 +20,6 @@ Route::get('contact', 'PagesController@contact');
 Route::post('contact', 'MailController@send');
 // Research Opportunities
 Route::get('research', 'PagesController@research');
-/*---------------------------------------------------------------*/
 
 /*---Administration----------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -52,12 +51,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/projects/{projects}', ['uses' => 'ProjectsController@manageProjectShow']);
 
     // Publications
-    Route::get('admin/publications', ['uses' => 'PublicationsController@managePublicationIndex']);
+    Route::get('admin/publications', ['uses' => 'PublicationsController@managePublicationIndex', 'as' => 'admin.publications']);
+    Route::put('admin/publications', ['uses' => 'PublicationsController@managePublicationIndex']);
+    Route::post('admin/publications', ['uses' => 'PublicationsController@managePublicationStore']);
+    Route::get('admin/publications/create', ['uses' => 'PublicationsController@managePublicationCreate']);
+    Route::get('admin/publications/{publications}/edit', ['uses' => 'PublicationsController@managePublicationEdit']);
+    Route::patch('admin/publications/{publications}', ['uses' => 'PublicationsController@managePublicationUpdate']);
+    Route::delete('admin/publications/{publications}', ['uses' => 'PublicationsController@managePublicationDestroy', 'as' => 'admin.publications.destroy']);
+    Route::get('admin/publications/{publications}', ['uses' => 'PublicationsController@managePublicationShow']);
 
     // Pages
     Route::get('admin/pages', ['uses' => 'PagesController@managePublicationIndex']);
 });
-/*---------------------------------------------------------------*/
 
 /*---People------------------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -69,21 +74,18 @@ Route::get('peoples/current-staff', 'PeoplesController@indexType');
 Route::get('peoples/past-staff', 'PeoplesController@indexType');
 Route::get('peoples/partners', 'PeoplesController@indexPartners');
 Route::get('peoples/{peoples}', 'PeoplesController@show');
-/*---------------------------------------------------------------*/
 
 /*---Projects----------------------------------------------------*/
 /*---------------------------------------------------------------*/
 // Projects Route Resource
 Route::get('projects', 'ProjectsController@index');
 Route::get('projects/{projects}', 'ProjectsController@show');
-/*---------------------------------------------------------------*/
 
 /*---Publications------------------------------------------------*/
 /*---------------------------------------------------------------*/
 // Publications Route Resource
 Route::get('publications', 'PublicationsController@index');
 Route::get('publications/{publications}', 'PublicationsController@show');
-/*---------------------------------------------------------------*/
 
 /*---Authentication----------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -95,5 +97,4 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 // Registration routes
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
-/*---------------------------------------------------------------*/
 

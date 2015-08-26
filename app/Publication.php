@@ -13,5 +13,9 @@ class Publication extends Model
      */
     protected $fillable = [
         'name',
+        'type',
+        'reference',
+        'url',
+        'date'
     ];
 }

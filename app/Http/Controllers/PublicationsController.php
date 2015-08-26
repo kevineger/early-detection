@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PublicationRequest;
+use App\Publication;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class PublicationsController extends Controller
-{
+class PublicationsController extends Controller {
 
     /**
      * Display a listing of the publications.
@@ -21,69 +23,14 @@ class PublicationsController extends Controller
     }
 
     /**
-     * Show the form for creating a new publication.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created publication in storage.
-     *
-     * @param  Request  $request
-     * @return Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified publication.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return Response
      */
     public function show($id)
     {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified publication.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified publication in storage.
-     *
-     * @param  Request  $request
-     * @param  int  $id
-     * @return Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified publication from storage.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 
     /**************************************************************/
@@ -92,35 +39,113 @@ class PublicationsController extends Controller
 
     /*---Publication->-*/
 
-    public function managePublicationIndex()
+    /**
+     * Show the index page for Publication.
+     *
+     * @param Request $request
+     * @return \Illuminate\View\View
+     */
+    public function managePublicationIndex(Request $request)
     {
-        return view('admin.publication.index');
+        // If request is a search
+        if ($request->method() === "PUT")
+        {
+            $publications = Publication::where('name', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('reference', 'LIKE', '%' . $request->search . '%')
+                ->get();
+        } else
+        {
+            $publications = Publication::all();
+        }
+
+        return view('admin.publication.index', ['publications' => $publications]);
     }
 
-    public function managePublicationCreate(Publication $publication)
+    /**
+     * Show the create view for a Publication.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function managePublicationCreate()
     {
+        $publication_type = Collection::make([
+            ''                               => '',
+            'abstract_conference_commentary' => "Abstract, Conference Proceeding or Commentary",
+            'journal'                        => "Peer-Reviewed Journal Article",
+            'thesis'                         => "Thesis",
+        ]);
 
+        return view('admin.publication.create', ['publication_type' => $publication_type]);
     }
 
-    public function managePublicationStore(Request $request)
+    /**
+     * Store the newly created Publication.
+     *
+     * @param PublicationRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function managePublicationStore(PublicationRequest $request)
     {
+        $publication = Publication::create($request->all());
 
+        return redirect()->action('Publicationscontroller@managePublicationShow', [$publication]);
     }
 
+    /**
+     * Show the specified Publication.
+     *
+     * @param Publication $publication
+     * @return \Illuminate\View\View
+     */
     public function managePublicationShow(Publication $publication)
     {
-
+        return view('admin.publication.show', ['publication' => $publication]);
     }
 
+    /**
+     * Show the edit view for the specified Publication.
+     *
+     * @param Publication $publication
+     * @return \Illuminate\View\View
+     */
     public function managePublicationEdit(Publication $publication)
     {
+        $publication_type = Collection::make([
+            'abstract_conference_commentary' => "Abstract, Conference Proceeding or Commentary",
+            'journal'                        => "Peer-Reviewed Journal Article",
+            'thesis'                         => "Thesis",
+        ]);
 
+        return view('admin.publication.edit', ['publication' => $publication, 'publication_type' => $publication_type]);
     }
 
-    public function managePublicationUpdate(Request $request, Publication $publication)
+    /**
+     * Update the specified Publication.
+     *
+     * @param PublicationRequest $request
+     * @param Publication $publication
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function managePublicationUpdate(PublicationRequest $request, Publication $publication)
     {
+        $publication->update($request->all());
+
+        return redirect()->action('PublicationsController@manageProjectShow', [$publication]);
 
     }
 
-    /*-<-Publication---*/
+    /**
+     * Delete an existing project from storage.
+     *
+     * @param Publication $publication
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @throws \Exception
+     * @internal param Publication $project
+     */
+    function managePublicationDestroy(Publication $publication)
+    {
+        $publication->delete();
+
+        return redirect('admin/publications');
+    }
 }

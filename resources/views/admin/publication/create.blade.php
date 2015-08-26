@@ -7,9 +7,9 @@
 
 @section('content')
 
-    <h1>Create a Project</h1>
-    {!! Form::model($project = new App\Project, ['url' => 'admin/projects', 'files'=> true]) !!}
-        @include('admin.project.form', ['submitButtonText' => 'Add Project'])
+    <h1>Create a Publication</h1>
+    {!! Form::model($publication = new App\Publication, ['url' => 'admin/publications']) !!}
+        @include('admin.publication.form', ['submitButtonText' => 'Add Publication'])
     {!! Form::close() !!}
 
     {{--Print out any errors--}}
