@@ -36,6 +36,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('admin/peoples', ['uses' => 'PeoplesController@managePeopleStore']);
     Route::get('admin/peoples/create', ['uses' => 'PeoplesController@managePeopleCreate']);
     Route::get('admin/peoples/{peoples}/edit', ['uses' => 'PeoplesController@managePeopleEdit', 'as' => 'admin.peoples.edit']);
+    Route::get('admin/peoples/{peoples}/crop', ['uses' => 'PeoplesController@manageCrop', 'as' => 'admin.peoples.crop']);
+    Route::post('admin/peoples/{peoples}/crop', ['uses' => 'PeoplesController@manageCropStore', 'as' => 'admin.peoples.crop']);
     Route::patch('admin/peoples/{peoples}', ['uses' => 'PeoplesController@managePeopleUpdate']);
     Route::delete('admin/peoples/{peoples}', ['uses' => 'PeoplesController@managePeopleDestroy', 'as' => 'admin.peoples.destroy']);
     Route::get('admin/peoples/{peoples}', ['uses' => 'PeoplesController@managePeopleShow']);

@@ -124,6 +124,35 @@ class PeoplesController extends Controller {
     }
 
     /**
+     * Show the view for cropping the thumbnail.
+     *
+     * @param People $people
+     * @return \Illuminate\View\View
+     */
+    public function manageCrop(People $people)
+    {
+        $image = $people->image;
+
+        return view('admin.people.crop', ['image' => $image]);
+    }
+
+    /**
+     * Override the image with the new corp dimensions.
+     *
+     * @param People $people
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function manageCropStore(People $people, Request $request)
+    {
+        $img = Image::make('images/' . $people->image);
+        $img->crop((int)$request->width, (int)$request->height, (int)$request->xPos, (int)$request->yPos);
+        $img->save();
+
+        return redirect()->action('PeoplesController@managePeopleShow', [$people]);
+    }
+
+    /**
      * Store a newly created people in storage.
      *
      * @param PeopleRequest $request
@@ -148,7 +177,9 @@ class PeoplesController extends Controller {
             $this->addImage($people, $request, 'image2');
         }
 
-        return redirect()->action('PeoplesController@managePeopleShow', [$people]);
+//        return redirect()->action('PeoplesController@managePeopleShow', [$people]);
+        return redirect()->action('PeoplesController@manageCropStore', [$people]);
+
     }
 
     /**

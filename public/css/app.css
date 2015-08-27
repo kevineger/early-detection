@@ -6018,6 +6018,8 @@ p.center {
   text-align: center; }
   .btn-group button.btn {
     float: none; }
+  .btn-group > input.btn {
+    float: none; }
 
 h1, h2, h3, h4, h5, p, table {
   -webkit-touch-callout: none;
@@ -6293,6 +6295,11 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
 .people-container, .people-bio {
   padding: 40px; }
 
+#cropper {
+  margin: 40px;
+  max-width: 100%;
+  max-height: 1000px; }
+
 .people-bio h1 {
   margin-bottom: 0; }
 
@@ -6423,5 +6430,10 @@ p.subtitle {
 
 textarea {
   resize: none; }
+
+.admin-controls {
+  position: absolute;
+  top: 80px;
+  left: 40px; }
 
 /*# sourceMappingURL=app.css.map */
