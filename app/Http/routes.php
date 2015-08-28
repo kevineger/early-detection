@@ -66,6 +66,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/pages', ['uses' => 'PagesController@managePagesIndex']);
     Route::get('admin/pages/research', ['uses' => 'PagesController@manageResearch']);
     Route::post('admin/pages/research', ['uses' => 'PagesController@manageResearchStore']);
+    Route::get('admin/pages/emails', ['uses' => 'PagesController@manageEmails']);
+    Route::post('admin/pages/emails', ['uses' => 'EmailsController@store']);
+    Route::delete('admin/pages/emails/{emails}', ['uses' => 'EmailsController@destroy', 'as' => 'admin.emails.destroy']);
+
 });
 
 /*---People------------------------------------------------------*/
@@ -102,6 +106,6 @@ Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 // Registration routes
-Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::post('auth/register', 'Auth\AuthController@postRegister');
+//Route::get('auth/register', 'Auth\AuthController@getRegister');
+//Route::post('auth/register', 'Auth\AuthController@postRegister');
 

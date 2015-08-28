@@ -43,6 +43,12 @@ class RouteServiceProvider extends ServiceProvider
         {
             return \App\Publication::findOrFail($id);
         });
+
+        // Email route-model binding
+        $router->bind('emails', function($id)
+        {
+            return \App\Email::findOrFail($id);
+        });
     }
 
     /**

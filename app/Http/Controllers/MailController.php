@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Email;
 use App\Http\Requests\EmailRequest;
 
 use App\Http\Requests;
@@ -17,10 +18,12 @@ class MailController extends Controller
         $from_email = $request->input('email');
         $message_text = $request->input('message');
 
-        Mail::send('emails.contact-us', ['name' => $name, 'message_text' => $message_text], function($message) use ($name, $from_email)
+        $emails = Email::lists('email')->toArray();
+
+        Mail::send('emails.contact-us', ['name' => $name, 'message_text' => $message_text], function($message) use ($name, $from_email, $emails)
         {
             $message->from($from_email, $name);
-            $message->to('kevindevtester@gmail.com', 'Kevin Eger')->subject('MyFollowUp - Contact Us');
+            $message->to($emails)->subject('MyFollowUp - Contact Us');
         });
         return redirect('/');
     }

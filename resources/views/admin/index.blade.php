@@ -6,7 +6,7 @@
         <li><a href="{{ url('/admin/peoples') }}">Manage People</a></li>
         <li><a href="{{ url('/admin/projects') }}">Manage Projects</a></li>
         <li><a href="{{ url('/admin/publications') }}">Manage Publications</a></li>
-        <li><a href="{{ url('admin/pages') }}">Manage Static Pages</a></li>
+        <li><a href="{{ url('admin/pages') }}">Manage Static Elements</a></li>
     </ul>
     <div class="row">
         <div class="btn-group">

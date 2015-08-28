@@ -65,7 +65,7 @@
                             programming OR epidemiology / statistics summer research program
                         </li>
                         <li>Any specific projects you would be interested in being involved with (please visit our
-                            projects tab at <strong>www.earlydetection.ca</strong )</li>
+                            projects tab at <strong>www.earlydetection.ca</strong>)</li>
                     </ul>
                     <li><strong>Curriculum Vitae</strong></li>
                     <li><strong>Unofficial Transcript</strong></li>

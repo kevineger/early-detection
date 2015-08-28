@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Email;
 use App\HtmlContent;
+use App\Http\Requests\CreateEmailRequest;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -73,5 +75,12 @@ class PagesController extends Controller
         $html_content->save();
 
         return redirect()->action('PagesController@managePagesIndex');
+    }
+
+    public function manageEmails()
+    {
+        $emails = Email::all();
+
+        return view('admin.pages.emails', ['emails' => $emails]);
     }
 }
