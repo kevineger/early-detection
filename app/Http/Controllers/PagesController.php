@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\HtmlContent;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -37,7 +38,9 @@ class PagesController extends Controller
      */
     public function research()
     {
-        return view('pages.research');
+        $htmlpage = HtmlContent::getPage('research');
+
+        return view('pages.research', ['html_content' => $htmlpage]);
     }
 
     /**************************************************************/
@@ -46,35 +49,29 @@ class PagesController extends Controller
 
     /*---Static Pages->-*/
 
-    public function managePublicationIndex()
+    /**
+     * Show the view to manage all static pages.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function managePagesIndex()
     {
         return view('admin.pages.index');
     }
 
-//    public function managePublicationCreate(Publication $publication)
-//    {
-//
-//    }
-//
-//    public function managePublicationStore(Request $request)
-//    {
-//
-//    }
-//
-//    public function managePublicationShow(Publication $publication)
-//    {
-//
-//    }
-//
-//    public function managePublicationEdit(Publication $publication)
-//    {
-//
-//    }
-//
-//    public function managePublicationUpdate(Request $request, Publication $publication)
-//    {
-//
-//    }
+    public function manageResearch()
+    {
+        $htmlpage = HtmlContent::getPage('research');
 
-    /*-<-Static Pages---*/
+        return view('admin.pages.research', ['html_content' => $htmlpage]);
+    }
+
+    public function manageResearchStore(Request $request)
+    {
+        $html_content = HtmlContent::getPage('research');
+        $html_content->html = $request->html;
+        $html_content->save();
+
+        return redirect()->action('PagesController@managePagesIndex');
+    }
 }

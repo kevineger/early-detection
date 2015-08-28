@@ -63,7 +63,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/publications/{publications}', ['uses' => 'PublicationsController@managePublicationShow']);
 
     // Pages
-    Route::get('admin/pages', ['uses' => 'PagesController@managePublicationIndex']);
+    Route::get('admin/pages', ['uses' => 'PagesController@managePagesIndex']);
+    Route::get('admin/pages/research', ['uses' => 'PagesController@manageResearch']);
+    Route::post('admin/pages/research', ['uses' => 'PagesController@manageResearchStore']);
 });
 
 /*---People------------------------------------------------------*/

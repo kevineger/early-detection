@@ -6444,4 +6444,9 @@ textarea {
   top: 80px;
   left: 40px; }
 
+.btn-edit-group {
+  position: absolute;
+  top: 70px;
+  left: 20px; }
+
 /*# sourceMappingURL=app.css.map */

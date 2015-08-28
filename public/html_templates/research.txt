@@ -1,0 +1,74 @@
+<div class="row">
+            <div class="col-sm-12">
+                <h1>Research Opportunities</h1>
+
+                <p>The Early Detection Research Group is always looking for students to fill <strong>part-time</strong>
+                    and
+                    <strong>full-time</strong> research positions over the summer months.</p>
+
+                <p style="float:left;" class="subtitle">These are generally 8 week or 16 week work terms</p>
+            </div>
+            <hr>
+            <div class="col-sm-12">
+                <h2>Undergraduate Students</h2>
+
+                <p>All research positions for Summer 2015 have been filled. We thank you for your interest.</p>
+
+                <p>For those interested in applying for Summer 2016, applications will be accepted from Dec 1st - Dec
+                    31st, 2015.<br>In order to apply, please submit the following documents to Breanne.Cadham@bccancer
+                    .bc.ca with the subject heading "2016 Studentships":</p>
+                <br>
+                <ul>
+                    <li><strong>Cover Letter</strong> addressing the following:</li>
+                    <ul>
+                        <li>GA (minimum 80% average)</li>
+                        <li>Verification that you have completed a basic statistics course by the upcoming summer you
+                            are applying for
+                        </li>
+                        <li>Brief (2-3 sentences) description of any previous research- or medically-related
+                            volunteering or work positions
+                        </li>
+                        <li>Brief description of any summer plans you may have</li>
+                        <li>Brief description of why you would be interested in a premed oncology OR computer
+                            programming OR epidemiology / statistics summer research program
+                        </li>
+                        <li>Any specific projects you would be interested in being involved with (please visit our
+                            projects tab at <strong>www.earlydetection.ca</strong>)
+                        </li>
+                    </ul>
+                    <li><strong>Curriculum Vitae</strong></li>
+                    <li><strong>Unofficial Transcript</strong></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="col-sm-12">
+                <h2>Medical Students</h2>
+
+                <p><strong>Application Deadline:</strong> June 1st, 2015</p>
+
+                <p>For those interested in applying for Summer 2016, applications will be accepted from Dec 1st - Dec
+                    31st, 2015.<br>In order to apply, please submit the following documents to Breanne.Cadham@bccancer
+                    .bc.ca with the subject heading "2016 Studentships":</p>
+                <br>
+                <ul>
+                    <li><strong>Cover Letter</strong> addressing the following:</li>
+                    <ul>
+                        <li>GA (minimum 80% average)</li>
+                        <li>Verification that you have completed a basic statistics course by the upcoming summer you
+                            are applying for
+                        </li>
+                        <li>Brief (2-3 sentences) description of any previous research- or medically-related
+                            volunteering or work positions
+                        </li>
+                        <li>Brief description of any summer plans you may have</li>
+                        <li>Brief description of why you would be interested in a premed oncology OR computer
+                            programming OR epidemiology / statistics summer research program
+                        </li>
+                        <li>Any specific projects you would be interested in being involved with (please visit our
+                            projects tab at <strong>www.earlydetection.ca</strong )</li>
+                    </ul>
+                    <li><strong>Curriculum Vitae</strong></li>
+                    <li><strong>Unofficial Transcript</strong></li>
+                </ul>
+            </div>
+        </div>

@@ -1,5 +1,5 @@
 @extends('app')
 
 @section('content')
-    <h1>Research Opportunities</h1>
+    {!! $html_content->html !!}
 @endsection
