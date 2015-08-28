@@ -77,7 +77,10 @@ class ProjectsController extends Controller
      */
     public function manageProjectStore(ProjectRequest $request)
     {
-        $category = ProjectCategory::firstorCreate(['name' => $request->project_category_id]);
+        $category = ProjectCategory::find($request->project_category_id);
+        if( $category == null ) {
+            $category = ProjectCategory::create(['name' => $request->project_category_id]);
+        }
         $project = new Project;
         $project->name = $request->name;
         $project->description = $request->description;
