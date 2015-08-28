@@ -87,6 +87,9 @@ Route::get('projects/{projects}', 'ProjectsController@show');
 /*---------------------------------------------------------------*/
 // Publications Route Resource
 Route::get('publications', 'PublicationsController@index');
+Route::get('publications/abstracts-and-conference-proceedings', 'PublicationsController@indexType');
+Route::get('publications/journals', 'PublicationsController@indexType');
+Route::get('publications/theses', 'PublicationsController@indexType');
 Route::get('publications/{publications}', 'PublicationsController@show');
 
 /*---Authentication----------------------------------------------*/

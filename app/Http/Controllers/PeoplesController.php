@@ -118,9 +118,9 @@ class PeoplesController extends Controller {
             'past_staff'      => "Past Staff",
             'partner'         => "Partner"]);
 
-        $project_list = Project::lists('name', 'id');
+        $projects = Project::lists('name', 'id');
 
-        return view('admin.people.create', ['type_list' => $type_list, 'project_list' => $project_list]);
+        return view('admin.people.create', ['type_list' => $type_list, 'projects' => $projects]);
     }
 
     /**
@@ -146,7 +146,7 @@ class PeoplesController extends Controller {
     public function manageCropStore(People $people, Request $request)
     {
         $img = Image::make('images/' . $people->image);
-        $img->crop((int)$request->width, (int)$request->height, (int)$request->xPos, (int)$request->yPos);
+        $img->crop((int) $request->width, (int) $request->height, (int) $request->xPos, (int) $request->yPos);
         $img->save();
 
         return redirect()->action('PeoplesController@managePeopleShow', [$people]);
@@ -162,7 +162,8 @@ class PeoplesController extends Controller {
     {
         $people = People::create($request->all());
 
-        if (!is_null($request->project)) {
+        if (!is_null($request->project))
+        {
             $people->projects()->sync($request->project);
         }
 
@@ -207,12 +208,12 @@ class PeoplesController extends Controller {
             'past_staff'      => "Past Staff",
             'partner'         => "Partner"]);
 
-        $project_list = Project::lists('name', 'id');
+        $projects = Project::lists('name', 'id');
 
         return view('admin.people.edit', [
-            'people'       => $people,
-            'type_list'    => $type_list,
-            'project_list' => $project_list,
+            'people'    => $people,
+            'type_list' => $type_list,
+            'projects'  => $projects,
         ]);
     }
 
@@ -227,7 +228,7 @@ class PeoplesController extends Controller {
     {
         $people->update($request->all());
 
-        $people->projects()->sync($request->project);
+        $people->projects()->sync($request->project_list);
 
         // If there was an image attached, update image
         if ($request->hasFile('image'))

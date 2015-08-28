@@ -16,6 +16,7 @@ class People extends Model
         'name',
         'type',
         'position',
+        'project',
         'education',
         'description',
     ];
@@ -80,6 +81,16 @@ class People extends Model
     public function links()
     {
         return $this->hasMany('App\Link');
+    }
+
+    /**
+     * Get a list of Project IDs associated with the current People.
+     *
+     * @return mixed
+     */
+    public function getProjectListAttribute()
+    {
+        return $this->projects->lists('id');
     }
 
 }

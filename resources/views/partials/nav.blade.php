@@ -16,9 +16,10 @@
         <li class="dropdown{{ Request::is( 'publications*') ? ' active' : '' }}">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Publications <span class="caret"></span></a>
             <ul class="dropdown-menu animated fadeIn" role="menu">
-                <li><a class="dropdown-element" href="{{ url('publications') }}">Abstracts</a></li>
-                <li><a class="dropdown-element" href="{{ url('publications') }}">Peer Reviewed Journal Articles</a></li>
-                <li><a class="dropdown-element" href="{{ url('publications') }}">Theses</a></li>
+                <li><a class="dropdown-element" href="{{ url('publications') }}">All Publications</a></li>
+                <li><a class="dropdown-element" href="{{ url('publications/abstracts-and-conference-proceedings') }}">Abstracts</a></li>
+                <li><a class="dropdown-element" href="{{ url('publications/journals') }}">Peer Reviewed Journal Articles</a></li>
+                <li><a class="dropdown-element" href="{{ url('publications/theses') }}">Theses</a></li>
             </ul>
         </li>
         <li class={{ Request::is( 'research') ? 'active' : '' }}><a href="{{ url('research') }}">Research Opportunities</a></li>

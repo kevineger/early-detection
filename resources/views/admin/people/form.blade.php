@@ -20,7 +20,7 @@
 
 {{--Projects--}}
 <div class="form-group">
-    {!! Form::select('project[]', $project_list, null, ['id' => 'project', 'class' => 'form-control', 'multiple']) !!}
+    {!! Form::select('project_list[]', $projects, $people->projects->lists('id')->toArray(), ['id' => 'project_list', 'class' => 'form-control', 'multiple']) !!}
 </div>
 
 {{--Education--}}
@@ -42,20 +42,22 @@
                 {!! Form::file('image') !!}
             @else
                 <div class="form-group">
-                    <img src="{{ asset('images/' . $people->image) }}" alt="{{ $people->name }} . image">
+                    <img style="height:200px" src="{{ asset('images/' . $people->image) }}"
+                         alt="{{ $people->name }} . image">
                     <a id="change_image" class="btn btn-default">Change image</a>
                 </div>
             @endif
         </div>
         <div class="col-sm-3">
-            @if( $people->image2 == null || $people->image2 === "placeholder2.jpg" )
+            @if( $people->image2 == null || $people->image2 === "placeholder2.png" )
                 {{--Image Upload--}}
                 <h3>Action Image</h3>
                 <label>Select image to upload:</label>
                 {!! Form::file('image2') !!}
             @else
                 <div class="form-group">
-                    <img src="{{ asset('images/' . $people->image2) }}" alt="{{ $people->name }} . image">
+                    <img style="height:200px" src="{{ asset('images/' . $people->image2) }}"
+                         alt="{{ $people->name }} . image">
                     <a id="change_image" class="btn btn-default">Change image</a>
                 </div>
             @endif
@@ -74,14 +76,11 @@
 
 @section('footer')
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#type').select2({
-                placeholder: 'Select Type',
-                allowClear: true
-            });
-            $('#project').select2({
-                placeholder: 'Select Projects'
-            });
+        $('#type').select2({
+            placeholder: 'Select Type'
+        });
+        $('#project_list').select2({
+            placeholder: 'Select Projects'
         });
     </script>
     <script>

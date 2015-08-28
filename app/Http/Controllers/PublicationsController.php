@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\PublicationRequest;
 use App\Publication;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 
@@ -13,24 +14,54 @@ use App\Http\Controllers\Controller;
 class PublicationsController extends Controller {
 
     /**
-     * Display a listing of the publications.
+     * Display a listing of the resource.
      *
-     * @return \Illuminate\View\View
      */
     public function index()
     {
-        return view('publication.index');
+        $publications = Publication::all();
+
+        return view('publication.dashboard', ['publications' => $publications]);
+    }
+
+    /**
+     * Display a listing of Publication with specified type.
+     *
+     */
+    public function indexType(Request $request)
+    {
+        $publications = Publication::all();
+
+        // Get the correct Publications
+        if ($request->is('*/abstracts-and-conference-proceedings'))
+        {
+            $publications = Publication::getPublicationType('abstract_conference_commentary')->groupBy(function($p) {
+                return Carbon::parse($p->date)->format('Y');
+            });
+        } else if ($request->is('*/journals'))
+        {
+            $publications = Publication::getPublicationType('journal')->groupBy(function($p) {
+                return Carbon::parse($p->date)->format('Y');
+            });
+        } else if ($request->is('*/theses'))
+        {
+            $publications = Publication::getPublicationType('thesis')->groupBy(function($p) {
+                return Carbon::parse($p->date)->format('Y');
+            });
+        }
+
+        return view('publication.index', ['publications' => $publications]);
     }
 
     /**
      * Display the specified publication.
      *
-     * @param  int $id
-     * @return Response
+     * @param Publication $publication
+     * @internal param int $id
      */
-    public function show($id)
+    public function show(Publication $publication)
     {
-
+        dd($publication);
     }
 
     /**************************************************************/

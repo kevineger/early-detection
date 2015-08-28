@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-lg-9">
                 <div class="image-container">
-                    <img src="{{ asset('images/static/group.jpg') }}" alt="Early Detection Group">
+                    <img src="{{ asset('images/static/group_2015.jpg') }}" alt="Early Detection Group">
                 </div>
             </div>
             <div class="col-lg-3">

@@ -20,7 +20,6 @@ class CreateProjectsTable extends Migration
             $table->foreign('project_category_id')
                 ->references('id')
                 ->on('project_categories');
-            // TODO: Figure out fields
             $table->timestamps();
         });
 

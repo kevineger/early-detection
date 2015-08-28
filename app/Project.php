@@ -13,6 +13,7 @@ class Project extends Model
      */
     protected $fillable = [
         'name',
+        'description',
         'project_category_id',
     ];
 
@@ -21,7 +22,7 @@ class Project extends Model
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function projects()
+    public function peoples()
     {
         return $this->belongsToMany('App\People');
     }
