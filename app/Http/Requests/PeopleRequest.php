@@ -27,6 +27,7 @@ class PeopleRequest extends Request
             'name' => 'required',
             'type' => 'required',
             'position' => 'required',
+            'project_list' => 'required',
             'education' => 'required',
             'description' => 'required',
         ];
