@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="707bad9f-caf5-4c95-acc9-fa8bcca79c38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bre-bobini_image2_1440793886.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bre-bobini_image_1440793885.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2015_08_28_210155_create_emails_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateEmailRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Email.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmailsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/admin/pages/emails.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/MailController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/MailController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blade.xml" afterPath="$PROJECT_DIR$/.idea/blade.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/pages/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/pages/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/project/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/project/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/html_templates/research.txt" afterPath="$PROJECT_DIR$/public/html_templates/research.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+    <list default="true" id="707bad9f-caf5-4c95-acc9-fa8bcca79c38" name="Default" comment="pre comp switch">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/leopoldo-kunde_image_1440804766.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="early-detection.iws" />
@@ -40,23 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="form.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/project/form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MailController.php">
+      <file leaf-file-name="ProjectsController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16949153">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.37288135">
+              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
               <folding>
-                <element signature="e#40#54#0#PHP" expanded="true" />
+                <element signature="e#40#77#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,11 +55,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/seeds/PublicationTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/project/show.blade.php" />
         <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/publication/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/publication/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/publication/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/publication/form.blade.php" />
@@ -121,6 +104,8 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/CreateEmailRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/pages/emails.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MailController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/project/form.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php" />
       </list>
     </option>
   </component>
@@ -197,108 +182,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="early-detection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +198,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-follow-up" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="create.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/create.blade.php&#10;form&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/form.blade.php&#10;Request&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Requests/CreateEmailRequest.php&#10;index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/index.blade.php&#10;emailstable&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_28_210155_create_emails_table.php&#10;index.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/index.blade.php&#10;PagesCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PagesController.php&#10;Emailscon&#9;null&#9;null&#10;EmailsCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/EmailsController.php&#10;Provider&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php&#10;ServiceP&#9;null&#9;null&#10;CreateEmailRe&#9;null&#9;null&#10;EmailRe&#9;null&#9;null&#10;Peoplescon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;People&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/People.php&#10;email table&#9;null&#9;null&#10;Email&#9;null&#9;null&#10;Pagescon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PagesController.php&#10;page/index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/pages/index.blade.php&#10;admin/index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/index.blade.php&#10;show&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/project/show.blade.php&#10;routes&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/routes.php&#10;Peoplescon'&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;HtmlCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/HtmlContent.php&#10;Html table&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_28_175421_create_html_contents_table.php&#10;Seeder.&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/HtmlContentTableSeeder.php&#10;Seed&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/HtmlContentTableSeeder.php&#10;page&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/page.scss&#10;research&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/pages/research.blade.php&#10;mater&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;home&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/pages/home.blade.php&#10;Publica&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PublicationsController.php&#10;htmlcon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_28_175421_create_html_contents_table.php&#10;pages/index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/pages/index.blade.php&#10;publicat&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/publication.scss&#10;people&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/people.scss&#10;people.scs&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/people.scss&#10;nav&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/nav.blade.php&#10;Peoples&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;publication/index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/publication/index.blade.php&#10;PeoplesCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;Fact&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/factories/ModelFactory.php&#10;publications tabl&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210328_create_publications_table.php&#10;Publication&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Publication.php&#10;Project&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Project.php&#10;project ta&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210231_create_projects_table.php&#10;ProjectsCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/ProjectsController.php&#10;show.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/project/show.blade.php&#10;Person&#9;null&#9;null&#10;composer.json&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/composer.json" />
+    <property name="SearchEverywhereHistoryKey" value="form.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/project/form.blade.php&#10;Project&#9;null&#9;null&#10;Projectscon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/ProjectsController.php&#10;create.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/create.blade.php&#10;form&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/form.blade.php&#10;Request&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Requests/CreateEmailRequest.php&#10;index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/index.blade.php&#10;emailstable&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_28_210155_create_emails_table.php&#10;index.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/people/index.blade.php&#10;PagesCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PagesController.php&#10;Emailscon&#9;null&#9;null&#10;EmailsCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/EmailsController.php&#10;Provider&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php&#10;ServiceP&#9;null&#9;null&#10;CreateEmailRe&#9;null&#9;null&#10;EmailRe&#9;null&#9;null&#10;Peoplescon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;People&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/People.php&#10;email table&#9;null&#9;null&#10;Email&#9;null&#9;null&#10;Pagescon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PagesController.php&#10;page/index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/pages/index.blade.php&#10;admin/index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/index.blade.php&#10;show&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/project/show.blade.php&#10;routes&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/routes.php&#10;Peoplescon'&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;HtmlCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/HtmlContent.php&#10;Html table&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_28_175421_create_html_contents_table.php&#10;Seeder.&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/HtmlContentTableSeeder.php&#10;Seed&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/seeds/HtmlContentTableSeeder.php&#10;page&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/page.scss&#10;research&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/pages/research.blade.php&#10;mater&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/all/material.scss&#10;home&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/pages/home.blade.php&#10;Publica&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PublicationsController.php&#10;htmlcon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_28_175421_create_html_contents_table.php&#10;pages/index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/admin/pages/index.blade.php&#10;publicat&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/publication.scss&#10;people&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/people.scss&#10;people.scs&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/assets/sass/pages/people.scss&#10;nav&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/partials/nav.blade.php&#10;Peoples&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;publication/index&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/publication/index.blade.php&#10;PeoplesCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/PeoplesController.php&#10;Fact&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/factories/ModelFactory.php&#10;publications tabl&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210328_create_publications_table.php&#10;Publication&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Publication.php&#10;project ta&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/database/migrations/2015_08_17_210231_create_projects_table.php&#10;ProjectsCon&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/app/Http/Controllers/ProjectsController.php&#10;show.blade&#9;FILE&#9;file:///home/kevin/PHSA-dev/early-detection/resources/views/project/show.blade.php" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -497,7 +388,25 @@
       <option name="project" value="LOCAL" />
       <updated>1440787563778</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Adds dynamic email endpoints for contact us page">
+      <created>1440797323963</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1440797323963</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fixes project category creation">
+      <created>1440802245916</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1440802245916</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Fixes project category creation (v2)">
+      <created>1440803286845</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1440803286845</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -510,7 +419,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21638992" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21638992" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -584,7 +493,10 @@
     <MESSAGE value="Adds crop functionality" />
     <MESSAGE value="Adds Publications" />
     <MESSAGE value="Adds static page editing for research opps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds static page editing for research opps" />
+    <MESSAGE value="Adds dynamic email endpoints for contact us page" />
+    <MESSAGE value="Fixes project category creation" />
+    <MESSAGE value="Fixes project category creation (v2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes project category creation (v2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -593,45 +505,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_17_210231_create_projects_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3559322">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3559322">
-          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-          <folding>
-            <element signature="e#40#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2881356">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/people/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="55" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_17_210328_create_publications_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33898306">
@@ -650,7 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.118644066">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.033898305">
           <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84745765">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0871559">
           <caret line="100" column="2" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27118644">
           <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,10 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <marker date="1440787133271" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1440787133271" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13559322">
           <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30508474">
           <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2542373">
           <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30508474">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10169491">
           <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27118644">
           <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2542373">
           <caret line="154" column="4" selection-start-line="154" selection-start-column="4" selection-end-line="183" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45762712">
           <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7118644">
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7288136">
           <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2881356">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27118644">
           <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7966102">
           <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3898305">
           <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23728813">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47457626">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,9 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6440678">
           <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -963,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.118644066">
           <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,9 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8135593">
           <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,16 +817,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MailController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16949153">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2881356">
+          <caret line="17" column="29" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.118644066">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23728813">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ProjectCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/project/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProjectsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37288135">
+          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
           <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
+            <element signature="e#40#77#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
