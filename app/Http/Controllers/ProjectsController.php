@@ -123,7 +123,12 @@ class ProjectsController extends Controller
      */
     public function manageProjectUpdate(ProjectRequest $request, Project $project)
     {
-        $category = ProjectCategory::firstorCreate(['name' => $request->project_category_id]);
+        if (is_numeric($request->project_category_id)) {
+            $category = ProjectCategory::find((int)$request->project_category_id);
+        }
+        else {
+            $category = ProjectCategory::firstorCreate(['name' => $request->project_category_id]);
+        }
         $project->name = $request->name;
         $project->project_category_id = $category->id;
         $project->save();
