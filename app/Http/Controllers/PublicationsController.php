@@ -119,7 +119,7 @@ class PublicationsController extends Controller {
     {
         $publication = Publication::create($request->all());
 
-        return redirect()->action('Publicationscontroller@managePublicationShow', [$publication]);
+        return redirect()->action('PublicationsController@managePublicationShow', [$publication]);
     }
 
     /**

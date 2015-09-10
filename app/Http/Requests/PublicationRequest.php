@@ -26,7 +26,7 @@ class PublicationRequest extends Request
     {
         return [
             'name' => 'required | unique:publications',
-            'publication_type' => 'required',
+            'type' => 'required',
             'url' => 'active_url',
             'reference' => 'required',
             'date' => 'required | before:' . Carbon::now(),

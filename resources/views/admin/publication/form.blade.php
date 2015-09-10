@@ -4,7 +4,7 @@
 </div>
 {{--Type--}}
 <div class="form-group">
-    {!! Form::select('publication_type', $publication_type, null, ['id' => 'publication_type', 'class' => 'form-control js-tags']) !!}
+    {!! Form::select('type', $publication_type, null, ['id' => 'publication_type', 'class' => 'form-control js-tags']) !!}
 </div>
 {{--URL--}}
 <div class="form-group">
