@@ -5,8 +5,8 @@ namespace App\Http\Requests;
 use App\Http\Requests\Request;
 use Carbon\Carbon;
 
-class PublicationRequest extends Request
-{
+class PublicationRequest extends Request {
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -25,11 +25,11 @@ class PublicationRequest extends Request
     public function rules()
     {
         return [
-            'name' => 'required | unique:publications',
-            'type' => 'required',
-            'url' => 'active_url',
+            'name'      => 'required | unique:publications',
+            'type'      => 'required',
+            'url'       => 'url',
             'reference' => 'required',
-            'date' => 'required | before:' . Carbon::now(),
+            'date'      => 'required | before:' . Carbon::now(),
         ];
     }
 }
