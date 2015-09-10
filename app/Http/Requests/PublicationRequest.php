@@ -25,7 +25,7 @@ class PublicationRequest extends Request {
     public function rules()
     {
         return [
-            'name'      => 'required | unique:publications',
+            'name'      => 'required',
             'type'      => 'required',
             'url'       => 'url',
             'reference' => 'required',
